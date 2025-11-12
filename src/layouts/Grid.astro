@@ -1,79 +1,17 @@
+
 ---
 import Base from "./Base.astro";
 const { posts = [], title = "" } = Astro.props;
 ---
-
-<Base title={title}>
-  <main class="grid-container">
-    {posts && posts.length > 0 ? (
-      <section class="grid">
-        {posts.map((post) => (
-          <a href={post.slug} class="card">
-            {post.data.cover && (
-              <img
-                src={post.data.cover}
-                alt={post.data.title}
-                class="card-image"
-                loading="lazy"
-              />
-            )}
-            <div class="card-content">
-              <h3 class="card-title">{post.data.title}</h3>
-              {post.data.description && (
-                <p class="card-desc">{post.data.description}</p>
-              )}
-            </div>
-          </a>
-        ))}
-      </section>
-    ) : (
-      <div class="no-posts">
-        <p>No posts available.</p>
-      </div>
+<Base title={title || "Portfolio & Blog"}>
+  <div class="grid">
+    {posts.length ? posts.map(({ data, slug }) => (
+      <a class="card" href={`/blog/${slug}/`}>
+        {data.cover && <img src={data.cover} alt={data.title} loading="lazy" />}
+        <h3>{data.title}</h3>
+      </a>
+    )) : (
+      <p>No posts yet.</p>
     )}
-  </main>
-
-  <style>
-    .grid-container {
-      padding: 2rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 1.5rem;
-    }
-    .card {
-      text-decoration: none;
-      color: inherit;
-      background: #fff;
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-      transition: transform 0.2s ease;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-    }
-    .card-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-    }
-    .card-content {
-      padding: 1rem;
-    }
-    .card-title {
-      font-size: 1.1rem;
-      margin-bottom: 0.5rem;
-    }
-    .card-desc {
-      font-size: 0.9rem;
-      color: #555;
-    }
-    .no-posts {
-      padding: 2rem;
-      text-align: center;
-      color: #888;
-    }
-  </style>
+  </div>
 </Base>

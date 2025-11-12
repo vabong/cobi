@@ -1,32 +1,25 @@
 
-# Cobi van Tonder — Astro Portfolio + Blog
+# Cobi van Tonder — Astro Site (Warm Layout, 3-Column Grid)
 
-Layout:
-- Left sidebar with name + navigation (Josefin Slab / Josefin Sans)
-- Home page: grid of post thumbnails (newest first)
-- Post page: hero image, content, tags
-- Tag pages: /tags/<tag>
+- Warm beige sidebar (Josefin Slab/Sans), narrow width
+- Home page: 3-column grid, image + title only
+- Post pages with tags
+- Tag routes at `/tags/<tag>`
+- **Local images** via build-time script (`npm run build` runs `prebuild` to fetch covers)
 
-## Local development
-
+## Develop
 ```bash
 npm install
 npm run dev
 ```
 
-## Deploy to Vercel
-- Create a new Vercel project from this repo.
-- Framework preset: **Astro**.
-- Default build command is fine.
+## Deploy (Vercel)
+Push to GitHub and import. Vercel will:  
+1) run `npm run prebuild` to fetch covers into `/public/images/...`  
+2) run `npm run build` for the Astro static build.
 
-## Content
-Add posts under `src/content/blog/YYYY-MM-DD-slug/index.md` with frontmatter:
-```md
----
-title: "My Post"
-publishDate: "2025-01-01"
-cover: "/images/blog/my-post/cover.jpg"
-tags: ["tag1", "tag2"]
----
-Post body here...
+## Content structure
+```
+src/content/blog/<slug>/index.md
+public/images/blog/<slug>/cover.jpg (auto-fetched)
 ```

@@ -1,9 +1,9 @@
 
 ---
-import Base from './Base.astro';
+import Base from "./Base.astro";
 const { frontmatter } = Astro.props;
 ---
-<Base title={`${frontmatter.title} — Cobi van Tonder`}>
+<Base title={frontmatter.title}>
   <article class="post">
     <div class="meta">{new Date(frontmatter.publishDate).toLocaleDateString()}</div>
     <h1>{frontmatter.title}</h1>
@@ -11,7 +11,7 @@ const { frontmatter } = Astro.props;
     <slot />
     {frontmatter.tags && frontmatter.tags.length ? (
       <div class="tags">
-        {frontmatter.tags.map(t => <a class="tag" href={`/tags/${encodeURIComponent(t)}/`}>{t}</a>)}
+        {frontmatter.tags.map((t) => <a class="tag" href={`/tags/${encodeURIComponent(t)}/`}>{t}</a>)}
       </div>
     ) : null}
   </article>
