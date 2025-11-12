@@ -1,23 +1,84 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #f4f3f2;
+  color: #333;
+}
 
-:root{ --bg:#e6e2df; --sidebar:#efe2db; --text:#2a2a2a; --muted:#7a7a7a; --card:#fff; --border:#d8d6d4;}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);}
-.layout{display:flex;min-height:100vh;}
-.sidebar{width:260px;padding:60px 40px;background:var(--sidebar);}
-.brand{font-family:'Josefin Slab',serif;font-size:24px;letter-spacing:.8px;margin-bottom:40px;}
-.nav{display:flex;flex-direction:column;gap:10px;}
-.nav a{font-family:'Josefin Sans',sans-serif;color:var(--text);text-decoration:none;font-size:15px;font-weight:300;}
-.main{flex:1;padding:32px;}
-.container{max-width:1100px;margin:0 auto;}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;}
-.card{background:var(--card);border:1px solid var(--border);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;height:100%;}
-.card img{width:100%;height:180px;object-fit:cover;display:block;}
-.card h3{font-family:'Josefin Sans',sans-serif;font-weight:400;font-size:18px;margin:12px 14px;}
-.post{background:#fff;border:1px solid var(--border);border-radius:6px;padding:24px;}
-.post h1{font-family:'Josefin Sans',sans-serif;font-weight:400;}
-.tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:24px;}
-.tag{border:1px solid var(--border);padding:4px 8px;border-radius:999px;font-size:12px;color:var(--muted);text-decoration:none;}
-.meta{color:var(--muted);font-size:14px;margin-bottom:16px;}
-.hero{width:100%;border-radius:4px;margin:12px 0;}
-@media (max-width:980px){.grid{grid-template-columns:repeat(2,1fr);}}
-@media (max-width:720px){.layout{flex-direction:column;}.sidebar{width:100%;padding:24px;}.grid{grid-template-columns:1fr;}}
+.layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  min-height: 100vh;
+}
+
+.sidebar {
+  background-color: #eae2dc;
+  padding: 2rem 1.5rem;
+  border-right: 1px dashed #d1c4b5;
+}
+
+.site-title {
+  font-family: "Josefin Slab", serif;
+  font-size: 1.5rem;
+  color: #442a25;
+  margin-bottom: 2rem;
+}
+
+.menu a {
+  display: block;
+  color: #333;
+  text-decoration: none;
+  margin: 0.4rem 0;
+  transition: color 0.2s;
+  font-size: 0.95rem;
+}
+
+.menu a:hover {
+  color: #000;
+}
+
+.content {
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+
+/* Grid cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-title {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
