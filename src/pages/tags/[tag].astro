@@ -1,14 +1,20 @@
+---
+import Grid from "../../layouts/Grid.astro";
+import { getCollection } from "astro:content";
 
----
-import Grid from '../../layouts/Grid.astro';
-import Base from '../../layouts/Base.astro';
-import { getCollection } from 'astro:content';
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  const tags = new Set(posts.flatMap((post) => post.data.tags || []));
+  return Array.from(tags).map((tag) => ({
+    params: { tag },
+    props: { tag },
+  }));
+}
+
 const { tag } = Astro.params;
-const all = await getCollection('blog');
-const items = all.filter(p => (p.data.tags || []).includes(tag));
+const posts = (await getCollection("blog")).filter((p) =>
+  p.data.tags?.includes(tag)
+);
 ---
-{items.length ? <Grid items={items} /> : (
-  <Base title={`No posts tagged ${tag} — Cobi van Tonder`}>
-    <p>No posts tagged <strong>{tag}</strong> yet.</p>
-  </Base>
-)}
+
+<Grid posts={posts} title={`Posts tagged: ${tag}`} />
