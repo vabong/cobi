@@ -1,0 +1,15 @@
+
+---
+import Base from './Base.astro';
+const { items } = Astro.props;
+---
+<Base title="Cobi van Tonder — Portfolio & Blog">
+  <div class="grid">
+    {items.map(({ data, slug }) => (
+      <a class="card" href={`/blog/${slug}/`}>
+        {data.cover && <img src={data.cover} alt={data.title} loading="lazy" />}
+        <h3>{data.title}</h3>
+      </a>
+    ))}
+  </div>
+</Base>

@@ -1,0 +1,42 @@
+
+---
+const { title = 'Cobi van Tonder' } = Astro.props;
+const links = [
+  { href: '/', label: 'Home' },
+  { href: '/academic-writing', label: 'Academic Writing' },
+  { href: '/acoustic-atlas', label: 'Acoustic Atlas' },
+  { href: '/compositions', label: 'List of Compositions' },
+  { href: '/mixed-media', label: 'List of Mixed Media' },
+  { href: '/music', label: 'Music' },
+  { href: '/scores', label: 'Scores' },
+  { href: '/bio', label: 'Info & Bio' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/persistence-of-sound', label: 'The Persistence of Sound' },
+  { href: '/echoes-of-our-ancestors', label: 'Echoes of our Ancestors' },
+];
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Josefin+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/global.css" />
+  </head>
+  <body>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="brand">Cobi van Tonder</div>
+        <nav class="nav">
+          {links.map(l => <a href={l.href}>{l.label}</a>)}
+        </nav>
+      </aside>
+      <main class="main">
+        <div class="container">
+          <slot />
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

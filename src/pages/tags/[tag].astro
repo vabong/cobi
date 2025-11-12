@@ -1,0 +1,14 @@
+
+---
+import Grid from '../../layouts/Grid.astro';
+import Base from '../../layouts/Base.astro';
+import { getCollection } from 'astro:content';
+const { tag } = Astro.params;
+const all = await getCollection('blog');
+const items = all.filter(p => (p.data.tags || []).includes(tag));
+---
+{items.length ? <Grid items={items} /> : (
+  <Base title={`No posts tagged ${tag} — Cobi van Tonder`}>
+    <p>No posts tagged <strong>{tag}</strong> yet.</p>
+  </Base>
+)}
