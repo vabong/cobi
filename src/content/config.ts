@@ -1,14 +1,16 @@
+import { defineCollection, z } from "astro:content";
 
-import { defineCollection, z } from 'astro:content';
-
+// Define your blog content collection
 const blog = defineCollection({
-  type: 'content',
   schema: z.object({
     title: z.string(),
-    publishDate: z.string(),
-    cover: z.string().optional(),
-    tags: z.array(z.string()).default([])
+    pubDate: z.date().optional(),
+    heroImage: z.string().optional(),
+    tags: z.array(z.string()).optional(),
   }),
+
+  // 👇 Default layout for all blog posts
+  entryLayout: "../../layouts/BlogPostLayout.astro",
 });
 
 export const collections = { blog };
