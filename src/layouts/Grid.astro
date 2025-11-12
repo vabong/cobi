@@ -1,0 +1,17 @@
+
+---
+import Base from "./Base.astro";
+const { posts = [], title = "" } = Astro.props;
+---
+<Base title={title || "Portfolio & Blog"}>
+  <div class="grid">
+    {posts.length ? posts.map(({ data, slug }) => (
+      <a class="card" href={`/blog/${slug}/`}>
+        {data.cover && <img src={data.cover} alt={data.title} loading="lazy" />}
+        <h3>{data.title}</h3>
+      </a>
+    )) : (
+      <p>No posts yet.</p>
+    )}
+  </div>
+</Base>
