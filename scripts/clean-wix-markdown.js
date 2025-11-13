@@ -3,12 +3,12 @@
  * clean-wix-markdown.js
  * ------------------------------------------
  * Cleans imported Wix markdown files by removing
- * <script>, <style>, and inline HTML junk.
+ * <script>, <style>, inline HTML junk, and fixing image paths.
  *
  * Usage:
- *   node scripts/clean-wix-markdown.js
+ *   node scripts/clean-wix-markdown.js [--dry-run]
  *   OR (if executable):
- *   ./scripts/clean-wix-markdown.js
+ *   ./scripts/clean-wix-markdown.js [--dry-run]
  *
  * Requirements:
  *   - Run from project root
@@ -20,7 +20,9 @@ import path from "path";
 
 // --- CONFIG ---
 const BLOG_DIR = path.resolve("src/content/blog");
+const PUBLIC_DIR = path.resolve("public");
 const ALLOWED_INLINE_TAGS = ["em", "strong", "a", "img", "br"];
+const isDryRun = process.argv.includes("--dry-run");
 
 // --- CLEANUP FUNCTION ---
 function removeWixArtifacts(content) {
@@ -39,9 +41,7 @@ function removeWixArtifacts(content) {
   cleaned = cleaned.replace(
     /<\/?([a-zA-Z0-9-]+)(\s[^>]*)?>/g,
     (match, tagName) => {
-      return ALLOWED_INLINE_TAGS.includes(tagName.toLowerCase())
-        ? match
-        : "";
+      return ALLOWED_INLINE_TAGS.includes(tagName.toLowerCase()) ? match : "";
     }
   );
 
@@ -51,6 +51,17 @@ function removeWixArtifacts(content) {
     "![$1](/$2)"
   );
 
+  // Replace common HTML entities
+  cleaned = cleaned
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'");
+
+  // Remove BOM and normalize newlines
+  cleaned = cleaned.replace(/^\uFEFF/, "");
+  cleaned = cleaned.replace(/\r\n/g, "\n");
+
   // Trim trailing spaces and excessive blank lines
   cleaned = cleaned.replace(/[ \t]+$/gm, "");
   cleaned = cleaned.replace(/\n{3,}/g, "\n\n");
@@ -58,14 +69,48 @@ function removeWixArtifacts(content) {
   return cleaned.trim() + "\n";
 }
 
+// --- CHECK IMAGE FILE EXISTENCE ---
+function checkImagesExist(content, filePath) {
+  const imagePattern = /!\[.*?\]\(\/(images\/blog\/[^)]+)\)/g;
+  const missing = [];
+  let match;
+  while ((match = imagePattern.exec(content)) !== null) {
+    const imageRel = match[1];
+    const imageAbs = path.join(PUBLIC_DIR, imageRel);
+    if (!fs.existsSync(imageAbs)) {
+      missing.push(imageRel);
+    }
+  }
+
+  if (missing.length > 0) {
+    console.warn(
+      `⚠️ Missing images in ${path.relative(process.cwd(), filePath)}:\n` +
+        missing.map((img) => `   - ${img}`).join("\n")
+    );
+  }
+}
+
 // --- PROCESS SINGLE FILE ---
 function processMarkdownFile(filePath) {
   const raw = fs.readFileSync(filePath, "utf-8");
   const cleaned = removeWixArtifacts(raw);
 
+  // Check for missing images before writing
+  checkImagesExist(cleaned, filePath);
+
   if (cleaned !== raw) {
-    fs.writeFileSync(filePath, cleaned, "utf-8");
-    console.log(`✅ Cleaned: ${path.relative(process.cwd(), filePath)}`);
+    if (!isDryRun) {
+      // Backup original
+      fs.copyFileSync(filePath, filePath + ".bak");
+      // Write cleaned file
+      fs.writeFileSync(filePath, cleaned, "utf-8");
+    }
+    console.log(
+      `${isDryRun ? "🧪 (dry run)" : "✅ Cleaned"}: ${path.relative(
+        process.cwd(),
+        filePath
+      )}`
+    );
   } else {
     console.log(`— No changes: ${path.relative(process.cwd(), filePath)}`);
   }
@@ -88,7 +133,7 @@ function getAllMarkdownFiles(dir) {
 
 // --- MAIN ---
 function cleanAllMarkdown() {
-  console.log(`\n🧹 Cleaning Wix artifacts in ${BLOG_DIR}\n`);
+  console.log(`\n🧹 Cleaning Wix artifacts in ${BLOG_DIR} ${isDryRun ? "(dry run mode)" : ""}\n`);
 
   if (!fs.existsSync(BLOG_DIR)) {
     console.error("❌ Blog directory not found:", BLOG_DIR);
@@ -104,7 +149,9 @@ function cleanAllMarkdown() {
 
   files.forEach(processMarkdownFile);
 
-  console.log("\n✨ Cleanup complete!\n");
+  console.log(
+    `\n✨ Cleanup ${isDryRun ? "preview" : "complete"} for ${files.length} file(s)!\n`
+  );
 }
 
 cleanAllMarkdown();
