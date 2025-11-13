@@ -6,23 +6,12 @@ tags: []
 ---# Acoustic Atlas
 
 *   Oct 14, 2021
-*   0 min read
 
 [
 
 ![ree](/images/blog/acoustic-atlas/image-1.png)
 
 ](http://acousticatlas.de)
-
-79
-
-79 views
-
-0
-
-0 comments
-
-Post not marked as liked
 
 ## Recent Posts
 
@@ -36,11 +25,7 @@ Post not marked as liked
 
 [VERTICAL TIME](https://chienpien.wixsite.com/fakeland/post/vertical-time)
 
-20
-
 0 comments0
-
-Post not marked as liked
 
 [
 
@@ -50,11 +35,7 @@ Post not marked as liked
 
 [River of Souls - ANIMALISM - Sound Installation for ROGER BALLEN](https://chienpien.wixsite.com/fakeland/post/animalism-sound-installation-for-roger-ballen)
 
-6
-
 0 comments0
-
-Post not marked as liked
 
 [
 
@@ -62,8 +43,4 @@ Post not marked as liked
 
 [Cross the Abyss - Apparitions in Venice - Soundtrack for ROGER BALLEN](https://chienpien.wixsite.com/fakeland/post/venice-aparitions-sound-installation-for-roger-ballen)
 
-5
-
 0 comments0
-
-Post not marked as liked

@@ -6,7 +6,6 @@ tags: []
 ---# Skatesonic - ISEA/IDEO/Villa Montalvo
 
 *   Apr 7, 2020
-*   2 min read
 
 ![ree](/images/blog/skatesonic-isea-ideo-villa-montalvo/image-1.jpeg)
 
@@ -33,22 +32,3 @@ http://makezine.com/2008/12/06/skate-sonic-skateboarding/
 Also, as a human-computer interface, could we someday be whizzing through virtual landscapes, controlling our computer programs with skateboards rather than fingers on a keyboard or hand on a mouse? Or could skaters improve their skills with the aid of sonic responses?
 
 [#Innovation](https://chienpien.wixsite.com/fakeland/blog/hashtags/Innovation) [#Interactive](https://chienpien.wixsite.com/fakeland/blog/hashtags/Interactive) [#Skatesonic](https://chienpien.wixsite.com/fakeland/blog/hashtags/Skatesonic) [#ISEA](https://chienpien.wixsite.com/fakeland/blog/hashtags/ISEA) [#Body](https://chienpien.wixsite.com/fakeland/blog/hashtags/Body)
-
-Tags:
-
-*   [interactive](https://chienpien.wixsite.com/fakeland/blog/tags/interactive)
-*   [musiccontrollers](https://chienpien.wixsite.com/fakeland/blog/tags/musiccontrollers)
-*   [electronicmusic](https://chienpien.wixsite.com/fakeland/blog/tags/electronicmusic)
-*   [interactiveart](https://chienpien.wixsite.com/fakeland/blog/tags/interactiveart)
-*   [innovation](https://chienpien.wixsite.com/fakeland/blog/tags/innovation)
-*   [skatesonic](https://chienpien.wixsite.com/fakeland/blog/tags/skatesonic)
-
-25
-
-25 views
-
-0
-
-0 comments
-
-Post not marked as liked

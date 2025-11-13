@@ -6,7 +6,6 @@ tags: []
 ---# Echoes & Reflections
 
 *   Jun 23, 2024
-*   3 min read
 
 ![ree](/images/blog/echoes-reflections/image-1.jpg)
 
@@ -59,20 +58,3 @@ Also available on Bandcamp
 Made possible by the European Commission Horizon 2020 research and innovation program under the Marie Sklodowska-Curie grant agreement No 897905. Made possible with additional funding by the University of York, HEIF A&H Impact Funding. Further thanks go out to Mariana Lopez, Lisa Peschel, Helen Jones, Joel Baker, Rebecca Perkins, Jenny Searle, Natalie Fullwood and the Humanities Research Centre University of York.
 
 Thank you to the nymphs
-
-Tags:
-
-*   [echo](https://chienpien.wixsite.com/fakeland/blog/tags/echo)
-*   [albums](https://chienpien.wixsite.com/fakeland/blog/tags/albums)
-*   [immersivelistening](https://chienpien.wixsite.com/fakeland/blog/tags/immersivelistening)
-*   [virtualacoustics](https://chienpien.wixsite.com/fakeland/blog/tags/virtualacoustics)
-
-20
-
-20 views
-
-0
-
-0 comments
-
-Post not marked as liked

@@ -3,16 +3,13 @@
  * clean-wix-markdown.js
  * ------------------------------------------
  * Cleans imported Wix markdown files by removing
- * <script>, <style>, inline HTML junk, and fixing image paths.
+ * <script>, <style>, inline HTML junk, extra Wix garbage,
+ * and fixing image paths.
  *
  * Usage:
  *   node scripts/clean-wix-markdown.js [--dry-run]
- *   OR (if executable):
- *   ./scripts/clean-wix-markdown.js [--dry-run]
  *
- * Requirements:
- *   - Run from project root
- *   - Node 18+
+ * Safe: keeps .bak backups and checks images.
  */
 
 import fs from "fs";
@@ -28,47 +25,63 @@ const isDryRun = process.argv.includes("--dry-run");
 function removeWixArtifacts(content) {
   let cleaned = content;
 
-  // Remove <script>…</script> blocks
+  // Remove <script>…</script> and <style>…</style>
   cleaned = cleaned.replace(/<script[\s\S]*?<\/script>/gi, "");
-
-  // Remove <style>…</style> blocks
   cleaned = cleaned.replace(/<style[\s\S]*?<\/style>/gi, "");
 
   // Remove Wix comments or metadata
   cleaned = cleaned.replace(/<!--.*?Wix.*?-->/gi, "");
 
+  // Remove leftover pro-gallery, min read, views, comments, and other junk
+  cleaned = cleaned
+    // remove entire pro-gallery blocks
+    .replace(/#pro-gallery[\s\S]*?(?=\n#|$)/gi, "")
+    // remove min read
+    .replace(/\*\s*\d+\s*min read/gi, "")
+    // remove Updated: lines
+    .replace(/Updated:\s?.*/gi, "")
+    // remove numeric-only lines (like "33")
+    .replace(/^\d+\s*$/gm, "")
+    // remove "views" or "comments" lines
+    .replace(/\b\d+\s*views?\b.*/gi, "")
+    .replace(/\b\d+\s*comments?\b.*/gi, "")
+    // remove "Post not marked as liked"
+    .replace(/Post not marked as liked.*/gi, "")
+    // remove empty bullet lines
+    .replace(/^\*\s*$/gm, "");
+
   // Strip inline HTML except for allowed tags
   cleaned = cleaned.replace(
     /<\/?([a-zA-Z0-9-]+)(\s[^>]*)?>/g,
-    (match, tagName) => {
-      return ALLOWED_INLINE_TAGS.includes(tagName.toLowerCase()) ? match : "";
-    }
+    (match, tagName) =>
+      ALLOWED_INLINE_TAGS.includes(tagName.toLowerCase()) ? match : ""
   );
 
   // --- FIX IMAGE PATHS (preserve subfolders) ---
   cleaned = cleaned.replace(
     /!\[(.*?)\]\((?:\.{0,2}\/)?(images\/blog\/[^\)]+)\)/g,
     (match, alt, relPath) => {
-      // Ensure leading slash, preserve subfolder path
       const normalized = relPath.replace(/^\/?/, "");
       return `![${alt}](/${normalized})`;
     }
   );
 
-  // Replace common HTML entities
+  // Replace HTML entities
   cleaned = cleaned
     .replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&")
     .replace(/&quot;/g, '"')
     .replace(/&#39;/g, "'");
 
-  // Remove BOM and normalize newlines
-  cleaned = cleaned.replace(/^\uFEFF/, "");
-  cleaned = cleaned.replace(/\r\n/g, "\n");
+  // Normalize line endings and trim blank lines
+  cleaned = cleaned.replace(/^\uFEFF/, "").replace(/\r\n/g, "\n");
+  cleaned = cleaned.replace(/[ \t]+$/gm, "").replace(/\n{3,}/g, "\n\n");
 
-  // Trim trailing spaces and excessive blank lines
-  cleaned = cleaned.replace(/[ \t]+$/gm, "");
-  cleaned = cleaned.replace(/\n{3,}/g, "\n\n");
+  // Remove orphaned "Tags:" section at the bottom
+  cleaned = cleaned.replace(/\n?Tags:\n([\s\S]*?)$/gi, "");
+
+  // Remove empty "#" headers created after stripping content
+  cleaned = cleaned.replace(/^#\s*$/gm, "");
 
   return cleaned.trim() + "\n";
 }
@@ -81,9 +94,7 @@ function checkImagesExist(content, filePath) {
   while ((match = imagePattern.exec(content)) !== null) {
     const imageRel = match[1];
     const imageAbs = path.join(PUBLIC_DIR, imageRel);
-    if (!fs.existsSync(imageAbs)) {
-      missing.push(imageRel);
-    }
+    if (!fs.existsSync(imageAbs)) missing.push(imageRel);
   }
 
   if (missing.length > 0) {
@@ -98,15 +109,11 @@ function checkImagesExist(content, filePath) {
 function processMarkdownFile(filePath) {
   const raw = fs.readFileSync(filePath, "utf-8");
   const cleaned = removeWixArtifacts(raw);
-
-  // Check for missing images before writing
   checkImagesExist(cleaned, filePath);
 
   if (cleaned !== raw) {
     if (!isDryRun) {
-      // Backup original
       fs.copyFileSync(filePath, filePath + ".bak");
-      // Write cleaned file
       fs.writeFileSync(filePath, cleaned, "utf-8");
     }
     console.log(
@@ -126,11 +133,9 @@ function getAllMarkdownFiles(dir) {
   let files = [];
   for (const entry of entries) {
     const fullPath = path.join(dir, entry.name);
-    if (entry.isDirectory()) {
-      files = files.concat(getAllMarkdownFiles(fullPath));
-    } else if (entry.name.endsWith(".md") || entry.name.endsWith(".mdx")) {
+    if (entry.isDirectory()) files = files.concat(getAllMarkdownFiles(fullPath));
+    else if (entry.name.endsWith(".md") || entry.name.endsWith(".mdx"))
       files.push(fullPath);
-    }
   }
   return files;
 }
@@ -149,14 +154,12 @@ function cleanAllMarkdown() {
   }
 
   const files = getAllMarkdownFiles(BLOG_DIR);
-
   if (files.length === 0) {
     console.warn("⚠️ No markdown files found.");
     return;
   }
 
   files.forEach(processMarkdownFile);
-
   console.log(
     `\n✨ Cleanup ${isDryRun ? "preview" : "complete"} for ${files.length} file(s)!\n`
   );

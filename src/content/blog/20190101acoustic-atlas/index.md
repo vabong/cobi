@@ -6,7 +6,6 @@ tags: []
 ---# Acoustic Atlas
 
 *   Jan 1, 2024
-*   2 min read
 
 [
 
@@ -23,13 +22,3 @@ The online web-audio platform enables Acoustic Atlas to run on most computers or
 Visit here (or click on the image above): https://acousticatlas.de
 
 [#AcousticAtlas](https://chienpien.wixsite.com/fakeland/blog/hashtags/AcousticAtlas) [#Arch](https://chienpien.wixsite.com/fakeland/blog/hashtags/Arch) [#SoundArchitecture](https://chienpien.wixsite.com/fakeland/blog/hashtags/SoundArchitecture) [#NetworkedSound](https://chienpien.wixsite.com/fakeland/blog/hashtags/NetworkedSound)
-
-43
-
-43 views
-
-0
-
-0 comments
-
-Post not marked as liked

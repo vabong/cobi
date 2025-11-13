@@ -6,7 +6,6 @@ tags: []
 ---# Yorkshire Post Interview
 
 *   Mar 1, 2022
-*   1 min read
 
 "From the glorious Gothic architecture of York Minster to the ivory-white marble of the Taj Mahal, they are monuments which are instantly recognisable. But while their visual appearance has captivated generations through the centuries, a hidden aspect is now being highlighted that has been forgotten with the passing of time."
 
@@ -15,13 +14,3 @@ tags: []
 ![ree](/images/blog/nice-mention-in-yorkshire-post/image-1.jpg)
 
 ](https://www.yorkshirepost.co.uk/news/people/yorkshires-heritage-sites-feature-in-project-to-reveal-the-hidden-acoustics-of-historic-locations-around-the-globe-3536634)
-
-71
-
-71 views
-
-0
-
-0 comments
-
-Post not marked as liked

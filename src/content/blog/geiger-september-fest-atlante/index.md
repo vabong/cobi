@@ -6,7 +6,6 @@ tags: []
 ---# Geiger September Fest - Atlante
 
 *   Apr 9, 2022
-*   5 min read
 
 ![ree](/images/blog/geiger-september-fest-atlante/image-1.png)
 
@@ -79,21 +78,3 @@ Robert Machiri/Pungwee listening (ZW)
 Robert Machiri is a sound worker born in Harare. Previously based in Johannesburg he currently resides in Berlin. He is a hoarder of things and ideas inspired by a biographical recollection of music; an embodied source for sonic study and memory. His work exists at the interstice of two streams of practice; his curatorial concepts and art which are presented through embodied critique as learning-through-unlearning, interwoven by sound, music and image-making. His most notable project PUNGWE is an interdisciplinary project circling sound in Africa with related contemporary arts discourses and spaces.
 
 [https://listeningatpungwe.wordpress.com/](https://listeningatpungwe.wordpress.com/)
-
-Tags:
-
-*   [drone](https://chienpien.wixsite.com/fakeland/blog/tags/drone)
-*   [microtonal](https://chienpien.wixsite.com/fakeland/blog/tags/microtonal)
-*   [performance](https://chienpien.wixsite.com/fakeland/blog/tags/performance)
-*   [electronic](https://chienpien.wixsite.com/fakeland/blog/tags/electronic)
-*   [infrasound](https://chienpien.wixsite.com/fakeland/blog/tags/infrasound)
-
-29
-
-29 views
-
-0
-
-0 comments
-
-Post not marked as liked

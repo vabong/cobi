@@ -1,18 +1,191 @@
-
 ---
 import Base from "./Base.astro";
-const { frontmatter } = Astro.props;
+import fs from "fs";
+import path from "path";
+
+const { frontmatter, slug, children } = Astro.props;
+
+// find folder from cover path
+let folder = "";
+if (frontmatter.cover) {
+  const m = frontmatter.cover.match(/\/images\/blog\/([^/]+)/);
+  if (m) folder = m[1];
+}
+
+// read all images in that folder
+let images: string[] = [];
+if (folder) {
+  const dir = path.resolve("public/images/blog", folder);
+  if (fs.existsSync(dir)) {
+    images = fs
+      .readdirSync(dir)
+      .filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
+      .sort();
+  }
+}
 ---
+
 <Base title={frontmatter.title}>
   <article class="post">
-    <div class="meta">{new Date(frontmatter.publishDate).toLocaleDateString()}</div>
-    <h1>{frontmatter.title}</h1>
-    {frontmatter.cover && <img class="hero" src={frontmatter.cover} alt={frontmatter.title} />}
-    <slot />
-    {frontmatter.tags && frontmatter.tags.length ? (
-      <div class="tags">
-        {frontmatter.tags.map((t) => <a class="tag" href={`/tags/${encodeURIComponent(t)}/`}>{t}</a>)}
+    <header>
+      <h1>{frontmatter.title}</h1>
+      {frontmatter.publishDate && (
+        <p class="date">
+          {new Date(frontmatter.publishDate).toLocaleDateString()}
+        </p>
+      )}
+    </header>
+
+    {images.length > 0 && (
+      <div class="carousel-container">
+        <div class="carousel" id="carousel">
+          {images.map((img, i) => (
+            <div class="slide">
+              <img
+                src={`/images/blog/${folder}/${img}`}
+                alt={`image ${i + 1}`}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+
+        <button class="nav prev" onClick="scrollCarousel(-1)">‹</button>
+        <button class="nav next" onClick="scrollCarousel(1)">›</button>
       </div>
-    ) : null}
+    )}
+
+    <section class="body">
+      {children}
+    </section>
+
+    {frontmatter.tags?.length > 0 && (
+      <div class="tags">
+        {frontmatter.tags.map((tag) => (
+          <a href={`/tags/${tag.toLowerCase()}/`} class="tag">#{tag}</a>
+        ))}
+      </div>
+    )}
   </article>
+
+  <script is:inline>
+    function scrollCarousel(direction) {
+      const el = document.getElementById("carousel");
+      if (!el) return;
+      const width = el.clientWidth;
+      el.scrollBy({ left: width * direction, behavior: "smooth" });
+    }
+  </script>
+
+  <style>
+    .post {
+      max-width: 720px;
+      margin: 0 auto;
+      font-family: Helvetica, Arial, sans-serif;
+      line-height: 1.7;
+      color: #111;
+    }
+
+    h1 {
+      font-family: "Josefin Slab", Georgia, serif;
+      font-size: 2rem;
+      margin-bottom: 0.25em;
+    }
+
+    .date {
+      color: #777;
+      font-size: 0.9rem;
+      margin-bottom: 2em;
+    }
+
+    /* --- Carousel --- */
+    .carousel-container {
+      position: relative;
+      overflow: hidden;
+      margin-bottom: 2rem;
+    }
+
+    .carousel {
+      display: flex;
+      transition: transform 0.4s ease;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      scroll-behavior: smooth;
+    }
+
+    .slide {
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      position: relative;
+    }
+
+    /* uniform height, wix-style */
+    .slide img {
+      width: 100%;
+      height: 460px;
+      object-fit: cover;
+      display: block;
+      border-radius: 0;
+    }
+
+    .nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.35);
+      border: none;
+      color: white;
+      font-size: 2.5rem;
+      width: 2rem;
+      height: 3rem;
+      cursor: pointer;
+      transition: background 0.2s;
+      z-index: 2;
+    }
+
+    .nav:hover {
+      background: rgba(0, 0, 0, 0.55);
+    }
+
+    .nav.prev {
+      left: 0.5rem;
+    }
+
+    .nav.next {
+      right: 0.5rem;
+    }
+
+    /* --- Body --- */
+    .body {
+      text-align: justify;
+      margin-bottom: 2rem;
+    }
+
+    /* hide inline images – carousel-only, like you requested */
+    .body img {
+      display: none;
+    }
+
+    /* --- Tags --- */
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+
+    .tag {
+      background: #eee;
+      padding: 0.25rem 0.75rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .tag:hover {
+      background: #ddd;
+    }
+  </style>
 </Base>

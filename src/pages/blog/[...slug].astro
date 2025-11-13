@@ -6,17 +6,19 @@ export async function getStaticPaths() {
   const posts = await getCollection("blog");
   return posts.map((post) => ({
     params: { slug: post.slug },
-    props: { post },
   }));
 }
 
 const { slug } = Astro.params;
 const post = await getEntryBySlug("blog", slug);
 if (!post) {
-  throw new Error(`Post not found for slug: ${slug}`);
+  throw new Error(`Post not found: ${slug}`);
 }
+
+// Astro renders the markdown for us:
+const { Content } = await post.render();
 ---
 
-<Post frontmatter={post.data}>
-  {post.body}
+<Post frontmatter={post.data} slug={slug}>
+  <Content />
 </Post>
