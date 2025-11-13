@@ -1,5 +1,5 @@
 ---
-Layout = null;
+export const prerender = true;
 ---
 
 <html lang="en">
@@ -9,30 +9,30 @@ Layout = null;
     <style>
       body {
         margin: 0;
-        padding: 0;
-        background: #eee;
-        font-family: "Didot", serif;
         height: 100vh;
         display: flex;
-        align-items: center;
         justify-content: center;
-      }
-      .wrap {
-        text-align: center;
-        font-size: 2rem;
-        color: #333;
+        align-items: center;
+        background: #000;
+        color: #fff;
+        font-family: Helvetica, Arial, sans-serif;
+        letter-spacing: 0.05em;
       }
       h1 {
-        font-weight: normal;
-        font-size: 2.5rem;
-        margin-bottom: 1rem;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 300;
+      }
+      p {
+        text-align: center;
+        opacity: 0.8;
       }
     </style>
   </head>
   <body>
-    <div class="wrap">
-      <h1>Cobi van Tonder</h1>
-      <div>Website update coming soon…</div>
+    <div>
+      <h1>COBI VAN TONDER</h1>
+      <p>Update coming soon…</p>
     </div>
   </body>
 </html>
