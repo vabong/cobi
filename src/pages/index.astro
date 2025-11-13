@@ -1,8 +1,38 @@
+---
+Layout = null;
+---
 
----
-import Grid from "../layouts/Grid.astro";
-import { getCollection } from "astro:content";
-const posts = await getCollection("blog");
-posts.sort((a, b) => new Date(b.data.publishDate).getTime() - new Date(a.data.publishDate).getTime());
----
-<Grid posts={posts} title="Portfolio & Blog" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cobi van Tonder</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #eee;
+        font-family: "Didot", serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .wrap {
+        text-align: center;
+        font-size: 2rem;
+        color: #333;
+      }
+      h1 {
+        font-weight: normal;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>Cobi van Tonder</h1>
+      <div>Website update coming soon…</div>
+    </div>
+  </body>
+</html>
