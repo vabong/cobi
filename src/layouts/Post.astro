@@ -2,26 +2,26 @@
 import Base from "./Base.astro";
 import fs from "fs";
 import path from "path";
+import { getEntryBySlug } from "astro:content";
 
-const { frontmatter, slug, children } = Astro.props;
+const { frontmatter, slug } = Astro.props;
+const post = await getEntryBySlug("blog", slug);
 
-// find folder from cover path
-let folder = "";
-if (frontmatter.cover) {
-  const m = frontmatter.cover.match(/\/images\/blog\/([^/]+)/);
-  if (m) folder = m[1];
-}
+// ⭐ FIX: Always use post.slug as folder name (never trust cover paths)
+const folder = post.slug;
 
-// read all images in that folder
+// ⭐ FIX: Render full HTML body correctly
+const html = post?.rendered?.html || post?.body || "";
+
+// ⭐ Load all images in the correct blog folder
 let images: string[] = [];
-if (folder) {
-  const dir = path.resolve("public/images/blog", folder);
-  if (fs.existsSync(dir)) {
-    images = fs
-      .readdirSync(dir)
-      .filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
-      .sort();
-  }
+const dir = path.resolve(`public/images/blog/${folder}`);
+
+if (fs.existsSync(dir)) {
+  images = fs
+    .readdirSync(dir)
+    .filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
+    .sort();
 }
 ---
 
@@ -38,6 +38,8 @@ if (folder) {
 
     {images.length > 0 && (
       <div class="carousel-container">
+        <button class="nav prev" onClick="scrollCarousel(-1)">‹</button>
+
         <div class="carousel" id="carousel">
           {images.map((img, i) => (
             <div class="slide">
@@ -50,14 +52,11 @@ if (folder) {
           ))}
         </div>
 
-        <button class="nav prev" onClick="scrollCarousel(-1)">‹</button>
         <button class="nav next" onClick="scrollCarousel(1)">›</button>
       </div>
     )}
 
-    <section class="body">
-      {children}
-    </section>
+    <section class="body" set:html={html}></section>
 
     {frontmatter.tags?.length > 0 && (
       <div class="tags">
@@ -101,26 +100,23 @@ if (folder) {
     /* --- Carousel --- */
     .carousel-container {
       position: relative;
-      overflow: hidden;
       margin-bottom: 2rem;
     }
 
     .carousel {
       display: flex;
-      transition: transform 0.4s ease;
       overflow-x: auto;
       scroll-snap-type: x mandatory;
       gap: 1rem;
       scroll-behavior: smooth;
+      padding-bottom: 0.25rem;
     }
 
     .slide {
       flex: 0 0 100%;
       scroll-snap-align: center;
-      position: relative;
     }
 
-    /* uniform height, wix-style */
     .slide img {
       width: 100%;
       height: 460px;
@@ -162,7 +158,7 @@ if (folder) {
       margin-bottom: 2rem;
     }
 
-    /* hide inline images – carousel-only, like you requested */
+    /* hide in-body markdown images (we use the carousel instead) */
     .body img {
       display: none;
     }
