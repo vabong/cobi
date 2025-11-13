@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "prebuild": "node scripts/fetch-images.js",
+  "build": "astro build"
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
