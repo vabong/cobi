@@ -5,23 +5,30 @@ import path from "path";
 import { getEntryBySlug } from "astro:content";
 
 const { frontmatter, slug } = Astro.props;
+
+// Load the post
 const post = await getEntryBySlug("blog", slug);
-
-// ⭐ FIX: Always use post.slug as folder name (never trust cover paths)
-const folder = post.slug;
-
-// ⭐ FIX: Render full HTML body correctly
 const html = post?.rendered?.html || post?.body || "";
 
-// ⭐ Load all images in the correct blog folder
-let images: string[] = [];
-const dir = path.resolve(`public/images/blog/${folder}`);
+// Extract folder name from cover path
+let folder = "";
+if (frontmatter.cover) {
+  const m = frontmatter.cover.match(/\/images\/blog\/([^/]+)/);
+  if (m) folder = m[1];
+}
 
-if (fs.existsSync(dir)) {
-  images = fs
-    .readdirSync(dir)
-    .filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
-    .sort();
+// Load all images in that folder
+let images: string[] = [];
+if (folder) {
+  const dir = path.resolve("public/images/blog", folder);
+  if (fs.existsSync(dir)) {
+    images = fs
+      .readdirSync(dir)
+      .filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
+      .sort((a, b) =>
+        a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
+      );
+  }
 }
 ---
 
@@ -106,10 +113,10 @@ if (fs.existsSync(dir)) {
     .carousel {
       display: flex;
       overflow-x: auto;
-      scroll-snap-type: x mandatory;
       gap: 1rem;
+      scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
-      padding-bottom: 0.25rem;
+      padding: 0 3rem;
     }
 
     .slide {
@@ -122,7 +129,6 @@ if (fs.existsSync(dir)) {
       height: 460px;
       object-fit: cover;
       display: block;
-      border-radius: 0;
     }
 
     .nav {
@@ -136,20 +142,14 @@ if (fs.existsSync(dir)) {
       width: 2rem;
       height: 3rem;
       cursor: pointer;
-      transition: background 0.2s;
-      z-index: 2;
+      z-index: 10;
     }
+
+    .nav.prev { left: 0.5rem; }
+    .nav.next { right: 0.5rem; }
 
     .nav:hover {
       background: rgba(0, 0, 0, 0.55);
-    }
-
-    .nav.prev {
-      left: 0.5rem;
-    }
-
-    .nav.next {
-      right: 0.5rem;
     }
 
     /* --- Body --- */
@@ -158,9 +158,8 @@ if (fs.existsSync(dir)) {
       margin-bottom: 2rem;
     }
 
-    /* hide in-body markdown images (we use the carousel instead) */
     .body img {
-      display: none;
+      display: none; /* hide duplicate markdown images */
     }
 
     /* --- Tags --- */
