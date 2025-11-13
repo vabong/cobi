@@ -1,10 +1,8 @@
 ---
-
 title: "TETRARCHs, Artist Residency in Al Ain, UAE "
 publishDate: "2024-06-23"
 cover: "/images/blog/tetrarchs-artist-residency-in-al-ain-uae/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# TETRARCHs, Artist Residency in Al Ain, UAE
 
 *   Jun 23, 2024

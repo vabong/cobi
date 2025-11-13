@@ -1,10 +1,8 @@
 ---
-
 title: "Geiger September Fest - Atlante "
 publishDate: "2022-04-09"
 cover: "/images/blog/geiger-september-fest-atlante/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Geiger September Fest - Atlante
 
 *   Apr 9, 2022

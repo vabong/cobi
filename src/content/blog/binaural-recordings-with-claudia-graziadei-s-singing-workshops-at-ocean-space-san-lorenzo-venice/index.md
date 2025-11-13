@@ -1,10 +1,8 @@
 ---
-
 title: "Binaural Recordings with Claudia Graziadei's Singing Workshops at Ocean Space, San Lorenzo, Venice"
 publishDate: "2024-06-23"
 cover: "/images/blog/binaural-recordings-with-claudia-graziadei-s-singing-workshops-at-ocean-space-san-lorenzo-venice/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Binaural Recordings with Claudia Graziadei's Singing Workshops at Ocean Space, San Lorenzo, Venice
 
 *   Jun 23, 2024

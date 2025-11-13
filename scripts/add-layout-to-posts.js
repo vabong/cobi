@@ -9,7 +9,7 @@ import fs from "fs";
 import path from "path";
 
 const BLOG_DIR = path.resolve("src/content/blog");
-const LAYOUT_PATH = "../../layouts/BlogPostLayout.astro";
+const LAYOUT_PATH = "../../../layouts/BlogPostLayout.astro";
 
 function getAllMarkdownFiles(dir) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });

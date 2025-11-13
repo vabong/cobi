@@ -1,10 +1,8 @@
 ---
-
 title: "Echoes &#38; Reflections"
 publishDate: "2024-06-23"
 cover: "/images/blog/echoes-reflections/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Echoes & Reflections
 
 *   Jun 23, 2024

@@ -1,10 +1,8 @@
 ---
-
 title: "Cerbero, Fiera Crudele e Diversa"
 publishDate: "2020-12-10"
 cover: "/images/blog/cerbero-fiera-crudele-e-diversa/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Cerbero, Fiera Crudele e Diversa
 
 *   Dec 10, 2020

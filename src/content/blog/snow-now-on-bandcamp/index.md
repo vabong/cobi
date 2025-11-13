@@ -1,10 +1,8 @@
 ---
-
 title: "Snow now on Bandcamp"
 publishDate: "2022-03-01"
 cover: "/images/blog/snow-now-on-bandcamp/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Snow now on Bandcamp
 
 *   Mar 1, 2022

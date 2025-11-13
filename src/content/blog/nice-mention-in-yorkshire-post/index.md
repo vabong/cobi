@@ -1,10 +1,8 @@
 ---
-
 title: "Yorkshire Post Interview"
 publishDate: "2022-03-01"
 cover: "/images/blog/nice-mention-in-yorkshire-post/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Yorkshire Post Interview
 
 *   Mar 1, 2022

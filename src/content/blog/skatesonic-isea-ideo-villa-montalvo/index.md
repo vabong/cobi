@@ -1,10 +1,8 @@
 ---
-
 title: "Skatesonic - ISEA/IDEO/Villa Montalvo"
 publishDate: "2020-04-07"
 cover: "/images/blog/skatesonic-isea-ideo-villa-montalvo/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Skatesonic - ISEA/IDEO/Villa Montalvo
 
 *   Apr 7, 2020

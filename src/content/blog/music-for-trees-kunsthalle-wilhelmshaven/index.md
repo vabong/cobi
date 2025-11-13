@@ -1,11 +1,9 @@
 ---
-
 title: "Music for Trees - Kunsthalle Wilhelmshaven
 "
 publishDate: "2020-02-01"
 cover: "/images/blog/music-for-trees-kunsthalle-wilhelmshaven/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Music for Trees - Kunsthalle Wilhelmshaven
 
 *   Feb 1, 2020
