@@ -6,7 +6,7 @@ import { getEntryBySlug } from "astro:content";
 
 const { frontmatter, slug } = Astro.props;
 
-// Load the post
+// Load post markdown HTML
 const post = await getEntryBySlug("blog", slug);
 const html = post?.rendered?.html || post?.body || "";
 
@@ -17,14 +17,15 @@ if (frontmatter.cover) {
   if (m) folder = m[1];
 }
 
-// Load all images in that folder
-let images: string[] = [];
+// Load all images in that specific folder only
+let images = [];
 if (folder) {
   const dir = path.resolve("public/images/blog", folder);
   if (fs.existsSync(dir)) {
     images = fs
       .readdirSync(dir)
       .filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
+      // numeric sort FIXES random order + repeating issues
       .sort((a, b) =>
         a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
       );
@@ -34,8 +35,10 @@ if (folder) {
 
 <Base title={frontmatter.title}>
   <article class="post">
+    <!-- HEADER -->
     <header>
       <h1>{frontmatter.title}</h1>
+
       {frontmatter.publishDate && (
         <p class="date">
           {new Date(frontmatter.publishDate).toLocaleDateString()}
@@ -43,11 +46,12 @@ if (folder) {
       )}
     </header>
 
+    <!-- CAROUSEL -->
     {images.length > 0 && (
-      <div class="carousel-container">
+      <div class="carousel-wrapper">
         <button class="nav prev" onClick="scrollCarousel(-1)">‹</button>
 
-        <div class="carousel" id="carousel">
+        <div id="carousel" class="carousel">
           {images.map((img, i) => (
             <div class="slide">
               <img
@@ -63,12 +67,16 @@ if (folder) {
       </div>
     )}
 
+    <!-- BODY TEXT -->
     <section class="body" set:html={html}></section>
 
+    <!-- TAGS -->
     {frontmatter.tags?.length > 0 && (
       <div class="tags">
         {frontmatter.tags.map((tag) => (
-          <a href={`/tags/${tag.toLowerCase()}/`} class="tag">#{tag}</a>
+          <a href={`/tags/${tag.toLowerCase()}/`} class="tag">
+            #{tag}
+          </a>
         ))}
       </div>
     )}
@@ -78,8 +86,7 @@ if (folder) {
     function scrollCarousel(direction) {
       const el = document.getElementById("carousel");
       if (!el) return;
-      const width = el.clientWidth;
-      el.scrollBy({ left: width * direction, behavior: "smooth" });
+      el.scrollBy({ left: el.clientWidth * direction, behavior: "smooth" });
     }
   </script>
 
@@ -101,22 +108,23 @@ if (folder) {
     .date {
       color: #777;
       font-size: 0.9rem;
-      margin-bottom: 2em;
+      margin-bottom: 2rem;
     }
 
-    /* --- Carousel --- */
-    .carousel-container {
+    /* --- CAROUSEL --- */
+    .carousel-wrapper {
       position: relative;
-      margin-bottom: 2rem;
+      margin: 2rem 0;
+      overflow: hidden;
     }
 
     .carousel {
       display: flex;
-      overflow-x: auto;
-      gap: 1rem;
       scroll-snap-type: x mandatory;
+      overflow-x: auto;
       scroll-behavior: smooth;
-      padding: 0 3rem;
+      gap: 1rem;
+      padding: 0 3rem; /* spacing for arrow visibility */
     }
 
     .slide {
@@ -135,39 +143,40 @@ if (folder) {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
+      width: 2.25rem;
+      height: 3rem;
       background: rgba(0, 0, 0, 0.35);
       border: none;
       color: white;
       font-size: 2.5rem;
-      width: 2rem;
-      height: 3rem;
       cursor: pointer;
       z-index: 10;
     }
-
-    .nav.prev { left: 0.5rem; }
-    .nav.next { right: 0.5rem; }
 
     .nav:hover {
       background: rgba(0, 0, 0, 0.55);
     }
 
-    /* --- Body --- */
+    .nav.prev { left: 0.5rem; }
+    .nav.next { right: 0.5rem; }
+
+    /* --- BODY --- */
     .body {
       text-align: justify;
       margin-bottom: 2rem;
     }
 
+    /* Hide duplicate markdown images */
     .body img {
-      display: none; /* hide duplicate markdown images */
+      display: none;
     }
 
-    /* --- Tags --- */
+    /* --- TAGS --- */
     .tags {
+      margin-top: 2rem;
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
-      margin-top: 2rem;
     }
 
     .tag {
@@ -175,12 +184,13 @@ if (folder) {
       padding: 0.25rem 0.75rem;
       border-radius: 999px;
       font-size: 0.85rem;
-      color: #333;
       text-decoration: none;
+      color: #333;
     }
 
     .tag:hover {
       background: #ddd;
     }
   </style>
+
 </Base>
