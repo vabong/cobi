@@ -1,10 +1,8 @@
 ---
-
 title: "Acoustic Atlas"
 publishDate: "2021-10-14"
 cover: "/images/blog/acoustic-atlas/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Acoustic Atlas
 
 *   Oct 14, 2021

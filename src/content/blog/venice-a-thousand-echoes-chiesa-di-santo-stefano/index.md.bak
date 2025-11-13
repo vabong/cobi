@@ -1,10 +1,8 @@
 ---
-
 title: "Venice a Thousand Echoes - Chiesa di Santo Stefano"
 publishDate: "2024-04-07"
 cover: "/images/blog/venice-a-thousand-echoes-chiesa-di-santo-stefano/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Venice a Thousand Echoes - Chiesa di Santo Stefano
 
 *   Apr 7, 2024

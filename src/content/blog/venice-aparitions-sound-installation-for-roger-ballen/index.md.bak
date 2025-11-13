@@ -1,10 +1,8 @@
 ---
-
 title: "Cross the Abyss - Apparitions in Venice - Soundtrack for ROGER BALLEN"
 publishDate: "2024-10-20"
 cover: "/images/blog/venice-aparitions-sound-installation-for-roger-ballen/cover.png"
 tags: []
-layout: ../../layouts/BlogPostLayout.astro
 ---# Cross the Abyss - Apparitions in Venice - Soundtrack for ROGER BALLEN
 
 *   Oct 20, 2024

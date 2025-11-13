@@ -45,10 +45,14 @@ function removeWixArtifacts(content) {
     }
   );
 
-  // Normalize image paths (e.g. "images/blog/foo.jpg" → "/images/blog/foo.jpg")
+  // --- FIX IMAGE PATHS (preserve subfolders) ---
   cleaned = cleaned.replace(
-    /!\[(.*?)\]\((?:\.{0,2}\/)?(images\/blog\/[^)]+)\)/g,
-    "![$1](/$2)"
+    /!\[(.*?)\]\((?:\.{0,2}\/)?(images\/blog\/[^\)]+)\)/g,
+    (match, alt, relPath) => {
+      // Ensure leading slash, preserve subfolder path
+      const normalized = relPath.replace(/^\/?/, "");
+      return `![${alt}](/${normalized})`;
+    }
   );
 
   // Replace common HTML entities
@@ -133,7 +137,11 @@ function getAllMarkdownFiles(dir) {
 
 // --- MAIN ---
 function cleanAllMarkdown() {
-  console.log(`\n🧹 Cleaning Wix artifacts in ${BLOG_DIR} ${isDryRun ? "(dry run mode)" : ""}\n`);
+  console.log(
+    `\n🧹 Cleaning Wix artifacts in ${BLOG_DIR} ${
+      isDryRun ? "(dry run mode)" : ""
+    }\n`
+  );
 
   if (!fs.existsSync(BLOG_DIR)) {
     console.error("❌ Blog directory not found:", BLOG_DIR);

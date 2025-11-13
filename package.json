@@ -8,9 +8,9 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-
     "clean:wix": "node scripts/clean-wix-markdown.js",
-    "clean:wix:dry": "node scripts/clean-wix-markdown.js --dry-run"
+    "clean:wix:dry": "node scripts/clean-wix-markdown.js --dry-run",
+    "add:layout": "node scripts/add-layout-to-posts.js"
   },
   "dependencies": {
     "astro": "^4.11.0",

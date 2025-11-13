@@ -1,8 +1,10 @@
 ---
+
 title: "VERTICAL TIME"
 publishDate: "2025-08-16"
 cover: "/images/blog/vertical-time/cover.png"
 tags: []
+layout: ../../layouts/BlogPostLayout.astro
 ---# VERTICAL TIME
 
 *   Aug 16
