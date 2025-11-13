@@ -1,15 +1,14 @@
 ---
-title: "Skatesonic - ISEA/IDEO/Villa Montalvo"
-publishDate: "2020-04-07"
-cover: "/images/blog/skatesonic-isea-ideo-villa-montalvo/cover.png"
+title: Skatesonic - ISEA/IDEO/Villa Montalvo
+publishDate: '2020-04-07'
+cover: /images/blog/skatesonic-isea-ideo-villa-montalvo/image-1.jpg
 tags: []
----# Skatesonic - ISEA/IDEO/Villa Montalvo
+---
+# Skatesonic - ISEA/IDEO/Villa Montalvo
 
 *   Apr 7, 2020
 
-![ree](/images/blog/skatesonic-isea-ideo-villa-montalvo/image-1.jpeg)
 
-![ree](/images/blog/skatesonic-isea-ideo-villa-montalvo/image-2.jpeg)
 
 _Skatesonic_ is a human/computer-skate/music interactive system. Movement data from a skateboard - speed, tilt, distance off the ground, sound from a microphone built into the board registers different tricks and sends them to a computer via blue-tooth, which plays back skateboard-generated music.
 

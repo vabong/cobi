@@ -1,15 +1,15 @@
 ---
-title: "New archaeological locations added to Acoustic Atlas!"
-publishDate: "2024-06-23"
-cover: "/images/blog/many-locations-added-to-acoustic-atlas/cover.png"
+title: New archaeological locations added to Acoustic Atlas!
+publishDate: '2024-06-23'
+cover: /images/blog/many-locations-added-to-acoustic-atlas/image-1.jpg
 tags: []
----# New archaeological locations added to Acoustic Atlas!
+---
+# New archaeological locations added to Acoustic Atlas!
 
 *   Jun 23, 2024
 
 [
 
-![ree](/images/blog/many-locations-added-to-acoustic-atlas/image-1.png)
 
 ](https://www.acousticatlas.de/experience)
 

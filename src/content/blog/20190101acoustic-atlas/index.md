@@ -1,9 +1,10 @@
 ---
-title: "Acoustic Atlas"
-publishDate: "2024-01-01"
-cover: "/images/blog/20190101acoustic-atlas/cover.png"
+title: Acoustic Atlas
+publishDate: '2024-01-01'
+cover: /images/blog/20190101acoustic-atlas/image-1.jpg
 tags: []
----# Acoustic Atlas
+---
+# Acoustic Atlas
 
 *   Jan 1, 2024
 

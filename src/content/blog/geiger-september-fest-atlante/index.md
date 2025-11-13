@@ -1,13 +1,13 @@
 ---
-title: "Geiger September Fest - Atlante "
-publishDate: "2022-04-09"
-cover: "/images/blog/geiger-september-fest-atlante/cover.png"
+title: 'Geiger September Fest - Atlante '
+publishDate: '2022-04-09'
+cover: /images/blog/geiger-september-fest-atlante/image-1.jpg
 tags: []
----# Geiger September Fest - Atlante
+---
+# Geiger September Fest - Atlante
 
 *   Apr 9, 2022
 
-![ree](/images/blog/geiger-september-fest-atlante/image-1.png)
 
 For several years, GEIGER have discussed with Berlin-based artist, researcher, and label manager Cedrik Fermont about collaborating on some of his projects. Following more than two decades of research in alternative electronic, experimental, and noise music in and from Asia and Africa, he recently published some compilations dedicated to this topic and several essays about electroacoustic, noise, and experimental music on these continents. With the release of the compilation CD ”Alternate African Reality – Electronic, electro acoustic and experimental from Africa and the diaspora” in 2020, we invited Cedrik to curate this festival together with us, with this CD as a starting point. The history of electronic and experimental music in Africa roughly started in the 1950s (with the notable exception of Halim El-Dabh in 1944) and today this music landscape is a rich and various one.
 

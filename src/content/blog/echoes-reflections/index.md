@@ -1,13 +1,13 @@
 ---
-title: "Echoes &#38; Reflections"
-publishDate: "2024-06-23"
-cover: "/images/blog/echoes-reflections/cover.png"
+title: Echoes &#38; Reflections
+publishDate: '2024-06-23'
+cover: /images/blog/echoes-reflections/image-1.jpg
 tags: []
----# Echoes & Reflections
+---
+# Echoes & Reflections
 
 *   Jun 23, 2024
 
-![ree](/images/blog/echoes-reflections/image-1.jpg)
 
 Echoes and Reflections is a series of 9 sound works created by Juliana Venter, Iti, Natasha Barrett, Sharon Phelan, Dorit Crysler, Aurélie Ferrière, Rob Brinkworth, Nora van Tonder, Victoria Keddie, Cobi van Tonder. These works bring a unique experience to listeners by combining virtual acoustic heritage sites with composition, whilst reflecting on the myth and meaning of Echo.
 

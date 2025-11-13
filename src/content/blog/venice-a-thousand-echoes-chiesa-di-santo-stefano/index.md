@@ -1,15 +1,15 @@
 ---
-title: "Venice a Thousand Echoes - Chiesa di Santo Stefano"
-publishDate: "2024-04-07"
-cover: "/images/blog/venice-a-thousand-echoes-chiesa-di-santo-stefano/cover.png"
+title: Venice a Thousand Echoes - Chiesa di Santo Stefano
+publishDate: '2024-04-07'
+cover: /images/blog/venice-a-thousand-echoes-chiesa-di-santo-stefano/image-1.jpg
 tags: []
----# Venice a Thousand Echoes - Chiesa di Santo Stefano
+---
+# Venice a Thousand Echoes - Chiesa di Santo Stefano
 
 *   Apr 7, 2024
 
 [
 
-![ree](/images/blog/venice-a-thousand-echoes-chiesa-di-santo-stefano/image-1.jpg)
 
 ](https://www.acousticatlas.de/locations/san_stefano)
 

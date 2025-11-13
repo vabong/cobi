@@ -1,15 +1,15 @@
 ---
-title: "Acoustic Atlas"
-publishDate: "2021-10-14"
-cover: "/images/blog/acoustic-atlas/cover.png"
+title: Acoustic Atlas
+publishDate: '2021-10-14'
+cover: /images/blog/acoustic-atlas/image-1.jpg
 tags: []
----# Acoustic Atlas
+---
+# Acoustic Atlas
 
 *   Oct 14, 2021
 
 [
 
-![ree](/images/blog/acoustic-atlas/image-1.png)
 
 ](http://acousticatlas.de)
 
@@ -19,7 +19,6 @@ tags: []
 
 [
 
-![VERTICAL TIME](/images/blog/acoustic-atlas/image-2.jpeg)
 
 ](https://chienpien.wixsite.com/fakeland/post/vertical-time)
 
@@ -29,7 +28,6 @@ tags: []
 
 [
 
-![River of Souls - ANIMALISM - Sound Installation for ROGER BALLEN](/images/blog/acoustic-atlas/image-3.jpeg)
 
 ](https://chienpien.wixsite.com/fakeland/post/animalism-sound-installation-for-roger-ballen)
 

@@ -6,7 +6,7 @@ import { getEntryBySlug } from "astro:content";
 
 const { frontmatter, slug } = Astro.props;
 
-// Load post markdown HTML
+// Load the post HTML content
 const post = await getEntryBySlug("blog", slug);
 const html = post?.rendered?.html || post?.body || "";
 
@@ -17,7 +17,7 @@ if (frontmatter.cover) {
   if (m) folder = m[1];
 }
 
-// Load all images in that specific folder only
+// Load all images from that folder only
 let images = [];
 if (folder) {
   const dir = path.resolve("public/images/blog", folder);
@@ -25,30 +25,25 @@ if (folder) {
     images = fs
       .readdirSync(dir)
       .filter((f) => /\.(png|jpe?g|webp|gif)$/i.test(f))
-      // numeric sort FIXES random order + repeating issues
       .sort((a, b) =>
         a.localeCompare(b, undefined, { numeric: true, sensitivity: "base" })
       );
   }
 }
 ---
-
 <Base title={frontmatter.title}>
   <article class="post">
     <!-- HEADER -->
     <header>
       <h1>{frontmatter.title}</h1>
-
       {frontmatter.publishDate && (
-        <p class="date">
-          {new Date(frontmatter.publishDate).toLocaleDateString()}
-        </p>
+        <p class="date">{new Date(frontmatter.publishDate).toLocaleDateString()}</p>
       )}
     </header>
 
     <!-- CAROUSEL -->
     {images.length > 0 && (
-      <div class="carousel-wrapper">
+      <div class="carousel-container">
         <button class="nav prev" onClick="scrollCarousel(-1)">‹</button>
 
         <div id="carousel" class="carousel">
@@ -74,9 +69,7 @@ if (folder) {
     {frontmatter.tags?.length > 0 && (
       <div class="tags">
         {frontmatter.tags.map((tag) => (
-          <a href={`/tags/${tag.toLowerCase()}/`} class="tag">
-            #{tag}
-          </a>
+          <a href={`/tags/${tag.toLowerCase()}/`} class="tag">#{tag}</a>
         ))}
       </div>
     )}
@@ -112,7 +105,7 @@ if (folder) {
     }
 
     /* --- CAROUSEL --- */
-    .carousel-wrapper {
+    .carousel-container {
       position: relative;
       margin: 2rem 0;
       overflow: hidden;
@@ -120,11 +113,11 @@ if (folder) {
 
     .carousel {
       display: flex;
-      scroll-snap-type: x mandatory;
       overflow-x: auto;
+      scroll-snap-type: x mandatory;
       scroll-behavior: smooth;
       gap: 1rem;
-      padding: 0 3rem; /* spacing for arrow visibility */
+      padding: 0 3rem;
     }
 
     .slide {
@@ -143,22 +136,22 @@ if (folder) {
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      width: 2.25rem;
-      height: 3rem;
       background: rgba(0, 0, 0, 0.35);
       border: none;
       color: white;
       font-size: 2.5rem;
+      width: 2rem;
+      height: 3rem;
       cursor: pointer;
       z-index: 10;
     }
 
+    .nav.prev { left: 0.5rem; }
+    .nav.next { right: 0.5rem; }
+
     .nav:hover {
       background: rgba(0, 0, 0, 0.55);
     }
-
-    .nav.prev { left: 0.5rem; }
-    .nav.next { right: 0.5rem; }
 
     /* --- BODY --- */
     .body {
@@ -166,17 +159,17 @@ if (folder) {
       margin-bottom: 2rem;
     }
 
-    /* Hide duplicate markdown images */
+    /* Hide duplicate markdown inline images */
     .body img {
       display: none;
     }
 
     /* --- TAGS --- */
     .tags {
-      margin-top: 2rem;
       display: flex;
       flex-wrap: wrap;
       gap: 0.5rem;
+      margin-top: 2rem;
     }
 
     .tag {
@@ -184,13 +177,12 @@ if (folder) {
       padding: 0.25rem 0.75rem;
       border-radius: 999px;
       font-size: 0.85rem;
-      text-decoration: none;
       color: #333;
+      text-decoration: none;
     }
 
     .tag:hover {
       background: #ddd;
     }
   </style>
-
 </Base>

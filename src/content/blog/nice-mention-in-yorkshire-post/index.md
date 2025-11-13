@@ -1,9 +1,10 @@
 ---
-title: "Yorkshire Post Interview"
-publishDate: "2022-03-01"
-cover: "/images/blog/nice-mention-in-yorkshire-post/cover.png"
+title: Yorkshire Post Interview
+publishDate: '2022-03-01'
+cover: /images/blog/nice-mention-in-yorkshire-post/image-1.jpg
 tags: []
----# Yorkshire Post Interview
+---
+# Yorkshire Post Interview
 
 *   Mar 1, 2022
 
@@ -11,6 +12,5 @@ tags: []
 
 [
 
-![ree](/images/blog/nice-mention-in-yorkshire-post/image-1.jpg)
 
 ](https://www.yorkshirepost.co.uk/news/people/yorkshires-heritage-sites-feature-in-project-to-reveal-the-hidden-acoustics-of-historic-locations-around-the-globe-3536634)
