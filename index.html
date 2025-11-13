@@ -1,113 +1,32 @@
-<!DOCTYPE html>
+---
+export const prerender = true;
+---
+
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cobi van Tonder — Portfolio</title>
-
-<!-- Exact fonts (Josefin Slab + Josefin Sans) -->
-<link href="https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300;400&family=Josefin+Sans:wght@300;400&display=swap" rel="stylesheet">
-
-<style>
-    * { box-sizing: border-box; }
-
-    body {
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cobi van Tonder</title>
+    <style>
+      body {
         margin: 0;
-        font-family: 'Josefin Sans', sans-serif;
-        background-color: #e6e2df;
-        color: #2a2a2a;
-        display: flex;
+        padding: 0;
+        background: black;
+        color: white;
+        font-family: sans-serif;
         height: 100vh;
-    }
-
-    /* LEFT sidebar */
-    .sidebar {
-        width: 260px;
-        padding: 60px 40px;
-        background-color: #efe2db;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .name {
-        font-family: 'Josefin Slab', serif; /* EXACT MATCH */
-        font-size: 24px;                   /* MATCHING THE SLIDER */
-        font-weight: 400;
-        margin-bottom: 40px;
-        letter-spacing: 0.8px;
-    }
-
-    .nav {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .nav a {
-        font-family: 'Josefin Sans', sans-serif;
-        text-decoration: none;
-        font-size: 15px;
-        font-weight: 300;
-        color: #2a2a2a;
-    }
-
-    /* RIGHT content */
-    .content {
-        flex: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 40px;
-        background: #e6e2df;
-        text-align: center;
-    }
-
-    .message-box {
-        background: white;
-        padding: 40px 60px;
-        border-radius: 6px;
-        box-shadow: 0px 3px 10px rgba(0,0,0,0.10);
-        max-width: 600px;
-    }
-
-    h1 {
-        font-family: 'Josefin Slab', serif;
-        font-weight: 400;
-    }
-
-    p {
-        font-size: 16px;
-        opacity: 0.8;
-    }
-
-</style>
-</head>
-<body>
-
-    <aside class="sidebar">
-        <div class="name">Cobi van Tonder</div>
-        <nav class="nav">
-            <a>Home</a>
-            <a>Academic Writing</a>
-            <a>Acoustic Atlas</a>
-            <a>List of Compositions</a>
-            <a>List of Mixed Media</a>
-            <a>Music</a>
-            <a>Scores</a>
-            <a>Info & Bio</a>
-            <a>Contact</a>
-            <a>The Persistence of Sound</a>
-            <a>Echoes of our Ancestors</a>
-        </nav>
-    </aside>
-
-    <main class="content">
-        <div class="message-box">
-            <h1>Site Under Reconstruction</h1>
-            <p>My portfolio is currently being rebuilt.<br>
-               New work, writing, music, and archive coming soon.</p>
-        </div>
-    </main>
-
-</body>
+        font-size: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div style="text-align:center; font-size:3rem; margin-bottom:1rem;">
+        Cobi van Tonder
+      </div>
+      <div style="text-align:center; opacity:0.7;">Update coming soon…</div>
+    </div>
+  </body>
 </html>
