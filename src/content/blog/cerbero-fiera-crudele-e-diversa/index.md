@@ -16,12 +16,6 @@ Released on Eight Tower Records
 
 ![ree](/images/blog/cerbero-fiera-crudele-e-diversa/image-1.png)
 
-  
-
-  
-
-  
-
 Tags:
 
 *   [drone](https://chienpien.wixsite.com/fakeland/blog/tags/drone)

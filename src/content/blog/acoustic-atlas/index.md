@@ -8,17 +8,11 @@ tags: []
 *   Oct 14, 2021
 *   0 min read
 
-  
-
 [
 
 ![ree](/images/blog/acoustic-atlas/image-1.png)
 
-
-
 ](http://acousticatlas.de)
-
-  
 
 79
 

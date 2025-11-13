@@ -8,8 +8,6 @@ tags: []
 *   Jun 23, 2024
 *   1 min read
 
-  
-
 ![](/images/blog/binaural-recordings-with-claudia-graziadei-s-singing-workshops-at-ocean-space-san-lorenzo-venice/image-1.webp)
 
 ![](/images/blog/binaural-recordings-with-claudia-graziadei-s-singing-workshops-at-ocean-space-san-lorenzo-venice/image-3.webp)
@@ -19,8 +17,6 @@ tags: []
 #pro-gallery-cugh812828-not-scoped .gallery-item-hover::before { background: transparent !important}
 
 try { window.requestAnimationFrame(function() { var ele = document.getElementById('pro-gallery-cugh812828-not-scoped'); var pgMeasures = ele.getBoundingClientRect(); var options = (() => "gallerySizeType:px|enableInfiniteScroll:true|titlePlacement:SHOW\_ON\_HOVER|gridStyle:1|imageMargin:5|galleryLayout:2|isVertical:true|numberOfImagesPerRow:3|cubeRatio:1|cubeType:fill|galleryThumbnailsAlignment:none")(ele); var width = pgMeasures.width; var height = pgMeasures.height; var isIOS = /iPad|iPhone|iPod/.test(navigator?.userAgent); if(isIOS) { width = width; width = width; height = height; height = height; } else { width = width; width = width; height = height; height = height; } pgMeasures = { top: pgMeasures.top, width, height }; var isVertical = options.includes('layoutParams\_structure\_scrollDirection:"VERTICAL"'); var layoutFixerUrl = '/\_serverless/pro-gallery-css-v4-server/layoutCss?ver=2&id=cugh812828-not-scoped&items=3565\_4032\_3024|3613\_3024\_4032|3708\_750\_1334&container=' + pgMeasures.top + '\_' + pgMeasures.width + '\_' + pgMeasures.height + '\_' + window.innerHeight + '&options=' + options; document.getElementById('layout-fixer-style-cugh812828-not-scoped').setAttribute('href', encodeURI(layoutFixerUrl)); }); } catch (e) { console.warn('Cannot set layoutFixer css', e); }
-
-  
 
 Singer and artist Claudia Graziadei led a series of amazing singing workshops at Ocean Space. I captured the amazing blend of voice, breath and space (massive reverberation) with a dummy-head created by Riccardo Farnea with my binaural DPA4060s.
 

@@ -10,10 +10,6 @@ tags: []
 
 Updated: Jun 23, 2024
 
-  
-
-  
-
 Tags:
 
 *   [drone](https://chienpien.wixsite.com/fakeland/blog/tags/drone)

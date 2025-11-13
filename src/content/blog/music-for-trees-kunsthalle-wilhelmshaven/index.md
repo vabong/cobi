@@ -11,8 +11,6 @@ tags: []
 
 Updated: Jun 23, 2024
 
-  
-
 ![](/images/blog/music-for-trees-kunsthalle-wilhelmshaven/image-1.webp)
 
 ![](/images/blog/music-for-trees-kunsthalle-wilhelmshaven/image-3.webp)
@@ -25,11 +23,9 @@ try { window.requestAnimationFrame(function() { var ele = document.getElementByI
 
 THROUGH A FOREST WILDERNESS. Aktionen im Wald. Performance, Konzeptkunst, Events. Actions in the Forest. Performance, Conceptual Art, Events. 1960 - ∞
 
-Ausstellung im Wald | Exhibition in the forest  
+Ausstellung im Wald | Exhibition in the forest
 
 Music for Trees aims to inspire exchange of energetic imagination between humans and trees. Participants are encouraged to move around the trees in stillness. By ‘performing’ to a tree, the human participant listens to the tree listening back her. A connection is formed, allowing for a potential transcendental experience.
-
-  
 
 Music for Trees was originally created in 2010 for an environmental art project by Suzanne Husky. At the time, I was researching binaural brainwave entrainment, plant bioacoustics, as well as military, medical and alternative healing documents for the effects of infra- to very high-frequencies on the human body. I came across the Cyma1000, a device used for sound therapy that can play up to five-pitch clusters (or chords) to assist in a type of resonance ‘massage’ therapy. In Music for Trees, selected Cyma therapy drones are used as the initial musical material, with presets such as ‘alpha state’, ’ecstasy’, ‘love’, ‘sona tissue repair’ but using only the frequency ranges for which plants show sensitivity. The frequencies clusters are then divided into independent audio channels and played over independent portable loudspeakers. As participants move through the forest the drone is spatialized. Participants thus contribute to the spatial and telepathic dimensions of the piece.
 

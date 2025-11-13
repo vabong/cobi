@@ -8,19 +8,9 @@ tags: []
 *   Apr 7, 2020
 *   2 min read
 
-  
-
-  
-
-  
-
 ![ree](/images/blog/skatesonic-isea-ideo-villa-montalvo/image-1.jpeg)
 
-  
-
 ![ree](/images/blog/skatesonic-isea-ideo-villa-montalvo/image-2.jpeg)
-
-  
 
 _Skatesonic_ is a human/computer-skate/music interactive system. Movement data from a skateboard - speed, tilt, distance off the ground, sound from a microphone built into the board registers different tricks and sends them to a computer via blue-tooth, which plays back skateboard-generated music.
 
@@ -41,8 +31,6 @@ Makezine Featured it:
 http://makezine.com/2008/12/06/skate-sonic-skateboarding/
 
 Also, as a human-computer interface, could we someday be whizzing through virtual landscapes, controlling our computer programs with skateboards rather than fingers on a keyboard or hand on a mouse? Or could skaters improve their skills with the aid of sonic responses?
-
-  
 
 [#Innovation](https://chienpien.wixsite.com/fakeland/blog/hashtags/Innovation) [#Interactive](https://chienpien.wixsite.com/fakeland/blog/hashtags/Interactive) [#Skatesonic](https://chienpien.wixsite.com/fakeland/blog/hashtags/Skatesonic) [#ISEA](https://chienpien.wixsite.com/fakeland/blog/hashtags/ISEA) [#Body](https://chienpien.wixsite.com/fakeland/blog/hashtags/Body)
 
