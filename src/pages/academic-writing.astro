@@ -2,31 +2,37 @@
 import Base from '../layouts/Base.astro';
 ---
 
-<Base title="Academic Writing">
-  <article class="post academic-writing">
-    <h1>Academic Writing</h1>
+<Base title="Acoustic Atlas">
+  <article class="post acoustic-atlas">
+    <h1>Acoustic Atlas</h1>
+
     <p>
-      My academic work and research contributions, including conference papers, book chapters and journal papers,
-      can be found on the following platforms:
+      <strong>Acoustic Atlas</strong> is an interactive global sound map exploring listening experiences,
+      sound art works, and site-specific acoustic compositions around the world.
     </p>
 
-    <div class="academic-buttons" role="navigation" aria-label="Academic profile links">
+    <div class="atlas-preview">
       <a
-        href="https://www.researchgate.net/profile/Cobi-Van-Tonder"
-        class="academic-btn"
+        href="https://www.acousticatlas.de/"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Open Acoustic Atlas website"
       >
-        ResearchGate Profile
+        <img
+          src="/images/acoustic-atlas-preview.png"
+          alt="Preview of the Acoustic Atlas interactive sound map"
+        />
       </a>
+    </div>
 
+    <div class="academic-buttons">
       <a
-        href="https://orcid.org/0000-0001-9309-5632"
+        href="https://www.acousticatlas.de/"
         class="academic-btn"
         target="_blank"
         rel="noopener noreferrer"
       >
-        ORCID iD
+        Visit Acoustic Atlas
       </a>
     </div>
 
@@ -38,64 +44,31 @@ import Base from '../layouts/Base.astro';
 
     <div class="academic-buttons">
       <a
-        href="https://www.researchgate.net/publication/337907446_Commentary_on_the_Portfolio_of_Compositions"
+        href="https://www.taylorfrancis.com/chapters/edit/10.4324/9781003347149-39/acoustic-atlas-orchestra-echoes-cobi-van-tonder"
         class="academic-btn academic-btn--secondary"
         target="_blank"
         rel="noopener noreferrer"
       >
-        PhD Thesis — Commentary on the Portfolio of Compositions
+        Acoustic Atlas — an Orchestra of Echoes
       </a>
     </div>
   </article>
 </Base>
 
 <style>
-  .academic-writing {
+  .acoustic-atlas {
     text-align: center;
   }
 
-  .academic-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-    margin-top: 26px;
+  .atlas-preview {
+    margin: 22px 0;
   }
 
-  .academic-btn {
-    display: block;
-    padding: 18px 22px;
-    border: 1px solid var(--border);
+  .atlas-preview img {
+    width: 100%;
+    max-width: 520px;
     border-radius: 10px;
-    text-decoration: none;
-    font-size: 18px;
-    background: var(--card);
-    color: var(--text);
-    box-shadow: 0 1px 6px rgba(0,0,0,.04);
-    transition: transform .15s ease;
-  }
-
-  .academic-btn:hover {
-    transform: translateY(-2px);
-  }
-
-  .academic-btn:focus-visible {
-    outline: 3px solid var(--accent);
-    outline-offset: 2px;
-  }
-
-  .academic-divider {
-    margin: 34px 0 18px;
-    border: none;
-    border-top: 1px dashed var(--border);
-  }
-
-  .academic-subtitle {
-    color: var(--muted);
-    font-size: 15px;
-    margin-bottom: 10px;
-  }
-
-  .academic-btn--secondary {
-    background: #fdfcf9;
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 6px rgba(0,0,0,.05);
   }
 </style>
