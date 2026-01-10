@@ -1,38 +1,58 @@
 ---
+// 1. We import the Base layout so this page gets the Sidebar & Nav automatically
+import Base from '../layouts/Base.astro';
+
+// 2. This tells Astro to build this page as static HTML (faster, safer)
 export const prerender = true;
 ---
 
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Cobi van Tonder</title>
-    <style>
-      body {
-        margin: 0;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        color: #fff;
-        font-family: Helvetica, Arial, sans-serif;
-        letter-spacing: 0.05em;
-      }
-      h1 {
-        font-size: 3rem;
-        text-align: center;
-        font-weight: 300;
-      }
-      p {
-        text-align: center;
-        opacity: 0.8;
-      }
-    </style>
-  </head>
-  <body>
-    <div>
+<Base title="Home">
+  <div class="home-wrapper">
+    <div class="message-box">
       <h1>COBI VAN TONDER</h1>
-      <p>Update coming soon…</p>
+      <p>
+        My portfolio is currently being rebuilt.<br />
+        New work, writing, music, and archive coming soon.
+      </p>
     </div>
-  </body>
-</html>
+  </div>
+</Base>
+
+<style>
+  /* We don't need to style the sidebar here because <Base> handles it.
+     We only style the specific content for the homepage.
+  */
+
+  .home-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Centers content vertically */
+    width: 100%;
+  }
+
+  .message-box {
+    background: white;
+    padding: 3rem 4rem;
+    border-radius: 6px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 600px;
+    border: 1px solid #eee;
+  }
+
+  h1 {
+    font-family: 'Josefin Slab', serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+  }
+
+  p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #666;
+  }
+</style>
