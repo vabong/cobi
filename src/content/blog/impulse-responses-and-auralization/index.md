@@ -1,9 +1,0 @@
----
-title: Impulse Responses and Auralization
-publishDate: '2024-06-23'
-cover: /images/blog/impulse-responses-and-auralization/image-1.jpg
-tags: []
----
-# Impulse Responses and Auralization
-
-*   Jun 23, 2024
