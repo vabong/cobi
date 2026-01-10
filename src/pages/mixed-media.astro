@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 
 const works = [
+  // Newer / CV additions
   {
     title: 'ROGER BALLEN : ANIMALISM — Immersive Soundtrack',
     year: '2025',
@@ -10,42 +11,32 @@ const works = [
   {
     title: 'ROGER BALLEN — Venice Apparitions',
     year: '2024',
-    meta: 'Two-month immersive sound installation, SpazioEventi La Toletta, Venice.',
+    meta: 'Two-month-long installation. 5-tone microtonal clusters and Buchla200 modular synth tones, immersed in virtual acoustic caves. SpazioEventi La Toletta, Venice, Italy.',
   },
   {
     title: 'Infrasound Sofa — Deep Healing',
     year: '2024',
-    meta: 'Deep infrasound installation, Venice Art Night, Giudecca.',
+    meta: 'Deep infrasound experience installation, Venice Art Night, Giudecca.',
   },
   {
-    title: 'Echoes and Reflections (Series)',
+    title: 'Acoustic Atlas Installation (Festival of Ideas)',
     year: '2022',
-    meta: 'Curated & directed sound heritage installation series, York (UK) and Online.',
+    meta: 'Installation with live microphones and interactive real-time auralization. Department of Art and Technology foyer, University of York.',
   },
   {
-    title: 'Echoes of Our Ancestors — Trilogy',
-    year: '2022',
-    meta: 'Infrasound-expanded cave installation, Dowkerbottom Cave.',
-  },
-  {
-    title: 'Acoustic Atlas Installation',
-    year: '2022',
-    meta: 'Live interactive installation, Festival of Ideas, University of York.',
-  },
-  {
-    title: 'Acoustic Atlas Premiere',
+    title: 'Acoustic Atlas Premiere (WAC2019)',
     year: '2019',
-    meta: 'Web Audio Conference (WAC2019), NTNU Trondheim, Norway.',
+    meta: 'Web Audio Conference, Norwegian University of Science and Technology (NTNU), Trondheim, Norway.',
   },
   {
     title: '4 Waters — Deep Implicancy',
     year: '2019',
-    meta: 'Film soundtrack installation with Arjuna Neuman, Silent Green Betonhalle, Berlin.',
+    meta: 'Film music in collaboration with Arjuna Neuman, for Denise Ferreira da Silva and Arjuna Neuman. 40min film loop, Silent Green, Betonhalle, Berlin.',
   },
   {
     title: 'Ionion Mirror',
     year: '2018',
-    meta: 'Video installation, SEAS Art Festival, Ionion Centre for Arts and Culture, Greece.',
+    meta: 'Video installation, SEAS Art Festival, Ionion Centre for the Arts and Culture, Kefalonia, Greece.',
   },
   {
     title: 'Liquid Violet — Surround Installation',
@@ -55,32 +46,69 @@ const works = [
   {
     title: 'Serpent Rain',
     year: '2016',
-    meta: 'Film sound design for Arjuna Neuman & Denise Ferreira da Silva, Bergen, Norway.',
+    meta: 'Film music and sound design for Arjuna Neuman and Denise Ferreira da Silva, Bergen, Norway.',
+  },
+
+  // Your existing Mixed Media list (what you pasted)
+  {
+    title: 'Vuurvangerkind',
+    year: '2016',
+    meta: 'HD (re-edited) video and 16-channel sound diffusion, Dublin.',
   },
   {
-    title: 'SNOW',
-    year: '2007',
-    meta: 'Audio CD release, Merz/Solitude, Germany.',
-  },
-  {
-    title: 'Improvisation with Pauline Oliveros',
-    year: '2008',
-    meta: 'Networked ensemble performance led by Chris Chafe, multi-site universities (Stanford, RPI, UCSD, UCSC, Princeton).',
+    title: 'Lullaby for InfrasoundBed',
+    year: '2011',
+    meta: '(40min loop) — Toffee Festival, City Hall Cape Town.',
   },
   {
     title: 'Streams',
     year: '2010',
-    meta: '16.8-channel sound sculpture, The Compound, San Francisco.',
+    meta: '16.8 channel sound sculpture — with Max/MSP and Cymascope (a sound healing device) frequency dial tones. The Compound, San Francisco.',
   },
   {
     title: 'Static Blackout',
     year: '2010',
-    meta: '16.8-channel sound sculpture, The Compound, San Francisco.',
+    meta: '16.8 channel sound sculpture — with Max/MSP and Nord Modular Synth. The Compound, San Francisco.',
   },
   {
-    title: 'Lullaby for Infrasound Bed',
-    year: '2011',
-    meta: 'Deep infrasound installation, Toffee Festival, Cape Town.',
+    title: 'Looping I',
+    year: '2010',
+    meta: 'Recursive projections with light, glass and live video. An installation using Max/MSP/Jitter, 2 live cameras and 3 projectors, The Compound, San Francisco.',
+  },
+  {
+    title: 'The Sleeping',
+    year: '2009',
+    meta: 'HD video performance, China Town, San Francisco — video stolen.',
+  },
+  {
+    title: 'Wunderflater',
+    year: '2009',
+    meta: 'Sculpture/Architecture/Installation/Networked live audio-feed. Built a Supercollider mixer with a Linux network audio protocol (Jacktrip) linking seven remote spaces acoustically. Tomas Welton Gallery, Stanford.',
+  },
+  {
+    title: 'Vuurvangerkindmens',
+    year: '2009',
+    meta: 'HD video and 16-channel sound diffusion, CCRMA Stage, Stanford.',
+  },
+  {
+    title: 'Noexi(s)t',
+    year: '2008',
+    meta: 'HD video and 8-channel sound diffusion, CCRMA Stage, Stanford.',
+  },
+  {
+    title: '8x8x8',
+    year: '2008',
+    meta: 'Black Sensory Box, Stanford.',
+  },
+  {
+    title: 'Skatesonic',
+    year: '2008',
+    meta: 'Interactive skateboard and music project for P.A.R.Ty, Seoul, Korea.',
+  },
+  {
+    title: 'Ephemeral Gumboots (exhibition)',
+    year: '2004',
+    meta: 'Feb–May: exhibited at the Ogaki Biennale 2004, on invitation by IAMAS (Institute of Advanced Media Arts and Sciences), dedicated to the theme “School of Futures”.',
   },
 ];
 ---
@@ -90,10 +118,10 @@ const works = [
     <h1>List of Mixed Media</h1>
 
     <p class="intro">
-      Installations, sound sculptures, film soundtracks, networked works, and immersive media works.
+      Mixed media works, installations, sound sculptures, networked performances, and film soundtracks.
     </p>
 
-    <ol class="works">
+    <ol class="works" aria-label="List of mixed media works">
       {works.map((w) => (
         <li class="work">
           <p class="line">
@@ -108,10 +136,7 @@ const works = [
 </Base>
 
 <style>
-  .mixed-media .intro {
-    color: var(--muted);
-    margin: 6px 0 18px;
-  }
+  .mixed-media .intro { color: var(--muted); margin: 6px 0 18px; }
   .works { list-style:none; padding:0; margin:0; }
   .work { padding:14px 0; border-top:1px dashed var(--border); }
   .work:first-child { border-top:none; padding-top:0; }
