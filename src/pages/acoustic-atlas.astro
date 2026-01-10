@@ -1,7 +1,57 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
+
 <Base title="Acoustic Atlas">
-  <h1>Acoustic Atlas</h1>
-  <p>Placeholder page. Content coming soon.</p>
+  <article class="post acoustic-atlas">
+    <h1>Acoustic Atlas</h1>
+
+    <p>
+      <strong>Acoustic Atlas</strong> is an interactive global sound map exploring listening experiences,
+      sound art works, and site-specific acoustic compositions around the world.
+    </p>
+
+    <div class="atlas-preview">
+      <a
+        href="https://www.acousticatlas.de/"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Open Acoustic Atlas website"
+      >
+        <img
+          src="/images/acoustic-atlas-preview.png"
+          alt="Preview of the Acoustic Atlas interactive sound map"
+        />
+      </a>
+    </div>
+
+    <div class="academic-buttons">
+      <a
+        href="https://www.acousticatlas.de/"
+        class="academic-btn"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Visit Acoustic Atlas
+      </a>
+    </div>
+  </article>
 </Base>
+
+<style>
+  .acoustic-atlas {
+    text-align: center;
+  }
+
+  .atlas-preview {
+    margin: 22px 0;
+  }
+
+  .atlas-preview img {
+    width: 100%;
+    max-width: 520px;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    box-shadow: 0 1px 6px rgba(0,0,0,.05);
+  }
+</style>
