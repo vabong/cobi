@@ -1,0 +1,25 @@
+---
+const { title, pubDate, heroImage } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+    <link rel="stylesheet" href="/styles/blogpost.css" />
+  </head>
+  <body>
+    <main class="post-container">
+      <article class="post">
+        <h1>{title}</h1>
+        {pubDate && <p class="date">{new Date(pubDate).toLocaleDateString()}</p>}
+
+        {heroImage && (
+          <img src={heroImage} alt={title} class="hero-image" loading="lazy" />
+        )}
+
+        <slot />
+      </article>
+    </main>
+  </body>
+</html>

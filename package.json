@@ -1,0 +1,20 @@
+{
+  "name": "cobi-astro",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prebuild": "node scripts/fetch-images.js",
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "clean:wix": "node scripts/clean-wix-markdown.js",
+    "clean:wix:dry": "node scripts/clean-wix-markdown.js --dry-run",
+    "add:layout": "node scripts/add-layout-to-posts.js"
+  },
+  "dependencies": {
+    "astro": "^4.11.0",
+    "@astrojs/rss": "^4.0.6",
+    "zod": "^3.23.8"
+  }
+}

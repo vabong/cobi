@@ -1,0 +1,24 @@
+---
+import Post from "../../layouts/Post.astro";
+import { getCollection, getEntryBySlug } from "astro:content";
+
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const post = await getEntryBySlug("blog", slug);
+if (!post) {
+  throw new Error(`Post not found: ${slug}`);
+}
+
+// Astro renders the markdown for us:
+const { Content } = await post.render();
+---
+
+<Post frontmatter={post.data} slug={slug}>
+  <Content />
+</Post>
