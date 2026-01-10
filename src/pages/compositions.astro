@@ -1,7 +1,240 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const compositions = [
+  {
+    title: 'Schuman Resonance Lightning Reverb',
+    year: '2024',
+    meta: 'Infrasound Drone composition, premiered in Venice, Italy.',
+  },
+  {
+    title: 'Delta Bioresonance Variations',
+    year: '2024',
+    meta: 'Drone — Infrasound Drone composition, premiered in Venice, Italy.',
+  },
+  {
+    title: 'Half wave 1,5 hz',
+    year: '2024',
+    meta: 'Drone — Infrasound Drone composition, premiered in Venice, Italy.',
+  },
+  {
+    title: 'Ether Echo',
+    year: '2022',
+    meta: 'A collaboration with theremin player Dorit Crysler, released on the compilation “Echoes and Reflections”. Virtual Cumaean Sybil Cave, Italy.',
+  },
+  {
+    title: 'Earth Echo',
+    year: '2022',
+    meta: 'A collaboration with singer Juliana Venter inside virtual Dowkerbottom Cave, released on the compilation “Echoes and Reflections”.',
+  },
+  {
+    title: 'Cerberu, fiera crudele e diversa',
+    year: '2020',
+    meta: 'Drone — Eight Tower Records, Italy.',
+  },
+  {
+    title: 'Mutation2',
+    year: '2020',
+    meta: 'Drone — Alternate African Reality, Syrphe Records, Germany.',
+  },
+  {
+    title: 'Music for Trees, Through a Forest Wilderness–Actions in the Forest',
+    year: '2019',
+    meta: 'Performance, Conceptual Art, Events, 1960 - ∞, Kunsthalle, Wilhelmshaven.',
+  },
+  {
+    title: 'Cave Music',
+    year: '2019',
+    meta: 'Real-time auralisation for voice and the acoustics of Spro Caves in Nesodden. Kunsthøgskolen i Oslo and Kunstnernes Hus, Oslo.',
+  },
+  {
+    title: 'Music for Trees, Through a Forest Wilderness–Actions in the Forest',
+    year: '2019',
+    meta: 'Performance, Conceptual Art, Events, 1960 - ∞, Nikolskoer Landpartie, Berlin.',
+  },
+  {
+    title: 'Goodbye Anthill',
+    year: '2018',
+    meta: 'Drone — Drone created from real-, augmented-, AI- & data mined voices and spliced interviews.',
+  },
+  {
+    title: 'Green Esponja',
+    year: '2018',
+    meta: 'Drone — For Grüne Salon collaboration with Alessandro Ubirajara Olbrich, Cibelle Cavalli Bastos, Cobi van Tonder, Jane D, Juliane Elting, Luís Knihs, Nico Arawô, Philip Wiegard, Sabina Maria van der Linden, Tatiana Saphir and Yusuf Etiman.',
+  },
+  {
+    title: 'Telepathic Resistenza',
+    year: '2017',
+    meta: 'For sound objects, voice & computer — Pearls, stones, jelly, microphones, convolution reverb, voice & computer.',
+  },
+  {
+    title: 'Gala',
+    year: '2016',
+    meta: 'For 8–12 musicians, 5’ — Open ended Instrumentation. 4–12 virtual or real instruments that can generate accurate micro-tones and sustain a note for 10–30 seconds (with or without electronic effects).',
+  },
+  {
+    title: 'Drift',
+    year: '2016',
+    meta: 'For 12 musicians, 12’ — Open ended Instrumentation. 12 virtual or real instruments that can generate accurate micro-tones and sustain a note for 10–30 seconds (with or without electronic effects).',
+  },
+  {
+    title: 'Mutation 2',
+    year: '2016',
+    meta: 'For 4 musicians, 13’ — Any virtual or real instruments that can generate accurate micro-tones and sustain a note for 10–30 seconds (with or without electronics).',
+  },
+  {
+    title: 'Fata Morgana',
+    year: '2016',
+    meta: 'For Female Choir, Percussion and Computer, 30’.',
+  },
+  {
+    title: 'Fata Morgana - Loss',
+    year: '',
+    meta: 'Voice Ensemble (10 voices) — can be sung by Mezzo-Soprano, Contralto and/or Soprano (all these voices could work). Alternatively fewer voices plus tape part.',
+  },
+  {
+    title: 'Fata Morgana - Arrest 3',
+    year: '',
+    meta: 'Voice Ensemble (16 voices) — 6 Mezzo-Soprano and/or Soprano; 10 Mezzo-Soprano and/or Contralto. Tubular Bells: C4, E4, G4. Bell Plates: G2, G#2, C3, E3, G3. Alternatively fewer voices plus tape part.',
+  },
+  {
+    title: 'Haute Rorschach',
+    year: '2015',
+    meta: 'Microtonal electronic music, 8’30” — 6 plucked string instruments (virtual or real) in any combinations: koto, guitar, harpsichord, harp, cello, violin, exotic oriental, african… i.e. for 6 guitars, or for 6 koto’s, or a mixture.',
+  },
+  {
+    title: 'When all memory is gone',
+    year: '2015',
+    meta: 'Microtonal electronic music, 12’.',
+  },
+  {
+    title: 'Relativity for Voice and Tape',
+    year: '2013',
+    meta: '(8min) — With vocalist Michelle O’Rourke — Printing Room, Trinity.',
+  },
+  {
+    title: 'String Quartet No 1',
+    year: '2012',
+    meta: '(18min) — Premiere will be in April 2013, Trinity.',
+  },
+  {
+    title: 'EXPLODE/IMPLODE',
+    year: '2012',
+    meta: '(20min) — 42 channel Spatial Audio piece developed at SARC, Queens University for the Sonic Lab performance space.',
+  },
+  {
+    title: 'Benign Positional Vertigo',
+    year: '2012',
+    meta: '(Reworked) for 8 piece Ensemble.',
+  },
+  {
+    title: '21',
+    year: '2012',
+    meta: '(21min) — Electronic music work based on a transcription of an audio sample taken from a talk by Terrence McKenna.',
+  },
+  {
+    title: 'Lullaby for InfrasoundBed',
+    year: '2011',
+    meta: '(40min loop) — Toffee Festival, City Hall Cape Town.',
+  },
+  {
+    title: 'Tristan Time Space Continuum',
+    year: '2010',
+    meta: 'For Trumpet, Trombone & Cello — Der Sommer in Stuttgart - mit Musik der Jahrhunderte, Germany.',
+  },
+  {
+    title: 'Vuurvangerkindmens',
+    year: '2009',
+    meta: 'HD Video and 16-channel sound diffusion, CCRMA Stage, Stanford.',
+  },
+  {
+    title: 'Luvbitten',
+    year: '2008',
+    meta: 'On GLU-music with Susanne M. Winterling.',
+  },
+  {
+    title: 'Memory and Distance',
+    year: '2008',
+    meta: 'For Solo Cello performed by Gavriel Lipkind as part of the Solitude Cycle, Ludwigsburg, Germany.',
+  },
+  {
+    title: 'Golden Summer Mistake',
+    year: '2007',
+    meta: 'For Soprano and Harpsichord. Soprano Angelika Luz and pianist/harpsichordist Florian Holscher. Kein Liederabend, Stuttgart.',
+  },
+  {
+    title: 'Benign Positional Vertigo',
+    year: '2006',
+    meta: 'For 9 piece ensemble, performed by Ensemble Ascolta. Stuttgart, ISCM World New Music Festival 2006 grenzenlos during the Festival Sommer in Stuttgart.',
+  },
+];
 ---
+
 <Base title="List of Compositions">
-  <h1>List of Compositions</h1>
-  <p>Placeholder page. Content coming soon.</p>
+  <article class="post compositions">
+    <h1>List of Compositions</h1>
+
+    <p class="intro">
+      A chronological selection of compositions and works. (If you’d like, we can later add filters by year/type.)
+    </p>
+
+    <ol class="works" aria-label="List of compositions">
+      {compositions.map((c) => (
+        <li class="work">
+          <p class="line">
+            <span class="title">{c.title}</span>
+            {c.year ? <span class="year">({c.year})</span> : null}
+          </p>
+          {c.meta ? <p class="meta">{c.meta}</p> : null}
+        </li>
+      ))}
+    </ol>
+  </article>
 </Base>
+
+<style>
+  .compositions .intro {
+    color: var(--muted);
+    margin-top: 6px;
+    margin-bottom: 18px;
+  }
+
+  .works {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .work {
+    padding: 12px 0;
+    border-top: 1px dashed var(--border);
+  }
+
+  .work:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .line {
+    margin: 0;
+    line-height: 1.35;
+  }
+
+  .title {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .year {
+    margin-left: 8px;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .meta {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.45;
+  }
+</style>
