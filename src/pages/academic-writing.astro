@@ -6,7 +6,8 @@ import Base from '../layouts/Base.astro';
   <article class="post academic-writing">
     <h1>Academic Writing</h1>
     <p>
-      My academic work and research contributions can be found on the following platforms:
+      My academic work and research contributions, including conference papers, book chapters and journal papers,
+      can be found on the following platforms:
     </p>
 
     <div class="academic-buttons" role="navigation" aria-label="Academic profile links">
@@ -26,6 +27,23 @@ import Base from '../layouts/Base.astro';
         rel="noopener noreferrer"
       >
         ORCID iD
+      </a>
+    </div>
+
+    <hr class="academic-divider" />
+
+    <p class="academic-subtitle">
+      Selected publications:
+    </p>
+
+    <div class="academic-buttons">
+      <a
+        href="https://www.researchgate.net/publication/337907446_Commentary_on_the_Portfolio_of_Compositions"
+        class="academic-btn academic-btn--secondary"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        PhD Thesis — Commentary on the Portfolio of Compositions
       </a>
     </div>
   </article>
@@ -53,6 +71,7 @@ import Base from '../layouts/Base.astro';
     background: var(--card);
     color: var(--text);
     box-shadow: 0 1px 6px rgba(0,0,0,.04);
+    transition: transform .15s ease;
   }
 
   .academic-btn:hover {
@@ -62,5 +81,21 @@ import Base from '../layouts/Base.astro';
   .academic-btn:focus-visible {
     outline: 3px solid var(--accent);
     outline-offset: 2px;
+  }
+
+  .academic-divider {
+    margin: 34px 0 18px;
+    border: none;
+    border-top: 1px dashed var(--border);
+  }
+
+  .academic-subtitle {
+    color: var(--muted);
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+
+  .academic-btn--secondary {
+    background: #fdfcf9;
   }
 </style>
