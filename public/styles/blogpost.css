@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400&display=swap');
+
+body {
+  margin: 0;
+  background-color: #f3f1ef;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+}
+
+.post-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 0 20px;
+  background: #fff;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+
+.post h1 {
+  font-family: 'Josefin Slab', serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  color: #222;
+  margin-bottom: 1rem;
+}
+
+.post .date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.post p {
+  margin-bottom: 1.5rem;
+}
+
+.post img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 2rem auto;
+  border-radius: 4px;
+}
+
+@media (min-width: 900px) {
+  .post-container {
+    padding: 60px;
+  }
+}
