@@ -1,7 +1,135 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const works = [
+  {
+    title: 'Vuurvangerkind',
+    year: '2016',
+    meta: 'HD (re-edited) video and 16-channel sound diffusion, Dublin.',
+  },
+  {
+    title: 'Lullaby for InfrasoundBed',
+    year: '2011',
+    meta: '(40min loop) — Toffee Festival, City Hall Cape Town.',
+  },
+  {
+    title: 'Streams',
+    year: '2010',
+    meta: '16.8 channel sound sculpture — with Max/MSP and Cymascope (a sound healing device) frequency dial tones. The Compound, San Francisco.',
+  },
+  {
+    title: 'Static Blackout',
+    year: '2010',
+    meta: '16.8 channel sound sculpture — with Max/MSP and Nord Modular Synth. The Compound, San Francisco.',
+  },
+  {
+    title: 'Looping I',
+    year: '2010',
+    meta: 'Recursive projections with light, glass and live video. An installation using Max/MSP/Jitter, 2 live cameras and 3 projectors, The Compound, San Francisco.',
+  },
+  {
+    title: 'The Sleeping',
+    year: '2009',
+    meta: 'HD video performance, China Town, San Francisco — video stolen.',
+  },
+  {
+    title: 'Wunderflater',
+    year: '2009',
+    meta: 'Sculpture/Architecture/Installation/Networked live audio-feed. Network audio streaming achievement: building a Supercollider mixer with a Linux network audio protocol (Jacktrip) to link up seven remote spaces acoustically. Tomas Welton Gallery, Stanford. MFA group collaborative show with Michael Arcega, Reed Anderson, Kazumi Shiho and Jina Valentine, with support from CCRMA (Center for Computer Research in Music and Acoustics) on Jacktrip development.',
+  },
+  {
+    title: 'Vuurvangerkindmens',
+    year: '2009',
+    meta: 'HD video and 16-channel sound diffusion, CCRMA Stage, Stanford.',
+  },
+  {
+    title: 'Noexi(s)t',
+    year: '2008',
+    meta: 'HD video and 8-channel sound diffusion, CCRMA Stage, Stanford.',
+  },
+  {
+    title: '8x8x8',
+    year: '2008',
+    meta: 'Black Sensory Box, Stanford.',
+  },
+  {
+    title: 'Skatesonic',
+    year: '2008',
+    meta: 'Interactive skateboard and music project for P.A.R.Ty, Seoul, Korea.',
+  },
+  {
+    title: 'Ephemeral Gumboots (exhibition)',
+    year: '2004',
+    meta: 'Feb–May: exhibited at the Ogaki Biennale 2004, on invitation by IAMAS (Institute of Advanced Media Arts and Sciences / International Academy of Media Arts and Sciences), dedicated to the theme of “School of Futures”.',
+  },
+];
 ---
+
 <Base title="List of Mixed Media">
-  <h1>List of Mixed Media</h1>
-  <p>Placeholder page. Content coming soon.</p>
+  <article class="post mixed-media">
+    <h1>List of Mixed Media</h1>
+
+    <p class="intro">
+      A selection of mixed media works, installations, sound sculptures, and performances.
+    </p>
+
+    <ol class="works" aria-label="List of mixed media works">
+      {works.map((w) => (
+        <li class="work">
+          <p class="line">
+            <span class="title">{w.title}</span>
+            {w.year ? <span class="year">({w.year})</span> : null}
+          </p>
+          {w.meta ? <p class="meta">{w.meta}</p> : null}
+        </li>
+      ))}
+    </ol>
+  </article>
 </Base>
+
+<style>
+  .mixed-media .intro {
+    color: var(--muted);
+    margin-top: 6px;
+    margin-bottom: 18px;
+  }
+
+  .works {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .work {
+    padding: 12px 0;
+    border-top: 1px dashed var(--border);
+  }
+
+  .work:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .line {
+    margin: 0;
+    line-height: 1.35;
+  }
+
+  .title {
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .year {
+    margin-left: 8px;
+    color: var(--muted);
+    font-weight: 400;
+  }
+
+  .meta {
+    margin: 6px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+</style>
