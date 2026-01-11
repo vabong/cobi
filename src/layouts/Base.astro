@@ -1,33 +1,39 @@
-
 ---
 import "../styles/global.css";
 const { title = "" } = Astro.props;
+
+// Works locally ("/") and on GitHub Pages project sites ("/cobi/")
+const base = import.meta.env.BASE_URL;
 ---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>{title ? `${title} | Cobi van Tonder` : "Cobi van Tonder"}</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Josefin+Slab:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Josefin+Slab:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="layout">
       <aside class="sidebar">
         <h1 class="site-title">Cobi van Tonder</h1>
-        <nav class="menu">
-          <a href="/">Home</a>
-          <a href="/academic-writing/">Academic Writing</a>
-          <a href="/acoustic-atlas/">Acoustic Atlas</a>
-          <a href="/compositions/">List of Compositions</a>
-          <a href="/mixed-media/">List of Mixed Media</a>
-          <a href="/music/">Music</a>
-          <a href="/scores/">Scores</a>
-          <a href="/bio/">Info & Bio</a>
-          <a href="/contact/">Contact</a>
-          <a href="/persistence-of-sound/">The Persistence of Sound</a>
-          <a href="/echoes-of-our-ancestors/">Echoes of our Ancestors</a>
+        <nav class="menu" aria-label="Site navigation">
+          <a href={base}>Home</a>
+          <a href={`${base}academic-writing/`}>Academic Writing</a>
+          <a href={`${base}acoustic-atlas/`}>Acoustic Atlas</a>
+          <a href={`${base}compositions/`}>List of Compositions</a>
+          <a href={`${base}mixed-media/`}>List of Mixed Media</a>
+          <a href={`${base}music/`}>Music</a>
+          <a href={`${base}scores/`}>Scores</a>
+          <a href={`${base}bio/`}>Info & Bio</a>
+          <a href={`${base}contact/`}>Contact</a>
+          <a href={`${base}persistence-of-sound/`}>The Persistence of Sound</a>
+          <a href={`${base}echoes-of-our-ancestors/`}>Echoes of our Ancestors</a>
         </nav>
       </aside>
       <main class="content">
