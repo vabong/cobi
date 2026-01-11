@@ -1,7 +1,165 @@
 ---
 import Base from '../layouts/Base.astro';
+
+const soundcloud = {
+  title: 'Microtonal Collection (SoundCloud)',
+  url: 'https://soundcloud.com/otoplasma/sets/microtonal-collection',
+  embed: 'https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/otoplasma/sets/microtonal-collection&color=%23442a25&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
+};
+
+const bandcamp = [
+  {
+    title: 'Echoes and Reflections',
+    url: 'https://telepathicbeing.bandcamp.com/album/echoes-and-reflections',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=0/size=large/bgcol=ffffff/linkcol=442a25/tracklist=false/transparent=true/',
+    note: 'If you choose to purchase (including pay-what-you-want when available), it directly supports future work.',
+  },
+  {
+    title: 'Transfigured Resonance',
+    url: 'https://telepathicbeing.bandcamp.com/album/transfigured-resonance',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=0/size=large/bgcol=ffffff/linkcol=442a25/tracklist=false/transparent=true/',
+  },
+  {
+    title: 'SNOW',
+    url: 'https://telepathicbeing.bandcamp.com/album/snow',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=0/size=large/bgcol=ffffff/linkcol=442a25/tracklist=false/transparent=true/',
+  },
+  {
+    title: 'Cerberu, fiera crudele e diversa (Eight Tower Records)',
+    url: 'https://eighthtowerrecords.bandcamp.com/track/cobi-van-tonder-cerbero-fiera-crudele-e-diversa',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/track=0/size=large/bgcol=ffffff/linkcol=442a25/tracklist=false/transparent=true/',
+  },
+];
 ---
+
 <Base title="Music">
-  <h1>Music</h1>
-  <p>Placeholder page. Content coming soon.</p>
+  <article class="post music">
+    <h1>Music</h1>
+
+    <p class="intro">
+      You’re invited to listen here. If you’d like to support my work, purchasing on Bandcamp (including
+      pay-what-you-want when enabled) helps me continue composing, researching, and publishing new projects.
+    </p>
+
+    <section class="block" aria-labelledby="listen-heading">
+      <h2 id="listen-heading" class="section-title">Listen here</h2>
+
+      <div class="embed">
+        <iframe
+          title="SoundCloud playlist: Microtonal Collection"
+          width="100%"
+          height="380"
+          scrolling="no"
+          frameborder="no"
+          allow="autoplay"
+          src={soundcloud.embed}
+        ></iframe>
+      </div>
+
+      <p class="small">
+        Prefer opening SoundCloud directly?
+        <a href={soundcloud.url} target="_blank" rel="noopener noreferrer">Open playlist</a>.
+      </p>
+    </section>
+
+    <section class="block" aria-labelledby="support-heading">
+      <h2 id="support-heading" class="section-title">Support via Bandcamp</h2>
+
+      <p class="small">
+        Bandcamp purchases are the most direct way to support independent work.
+      </p>
+
+      <div class="stack" role="navigation" aria-label="Bandcamp embeds and links">
+        {bandcamp.map((item) => (
+          <div class="item">
+            <h3 class="item-title">{item.title}</h3>
+
+            <div class="embed">
+              <iframe
+                title={`Bandcamp embed: ${item.title}`}
+                style="border: 0; width: 100%; height: 120px;"
+                src={item.embed}
+                seamless
+              ></iframe>
+            </div>
+
+            <p class="small">
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                Open on Bandcamp
+              </a>
+              {item.note ? <span class="note"> — {item.note}</span> : null}
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+  </article>
 </Base>
+
+<style>
+  .music { text-align: left; }
+
+  .intro {
+    color: var(--muted);
+    margin: 6px 0 18px;
+    line-height: 1.65;
+  }
+
+  .block {
+    margin-top: 22px;
+    padding-top: 18px;
+    border-top: 1px dashed var(--border);
+  }
+
+  .section-title {
+    margin: 0 0 12px;
+    font-weight: 400;
+  }
+
+  .embed {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--card);
+    box-shadow: 0 1px 6px rgba(0,0,0,.04);
+  }
+
+  .stack {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    margin-top: 12px;
+  }
+
+  .item {
+    padding-top: 12px;
+    border-top: 1px dashed var(--border);
+  }
+
+  .item:first-child {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  .item-title {
+    margin: 0 0 10px;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: .1px;
+  }
+
+  .small {
+    margin: 10px 0 0;
+    color: var(--muted);
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .small a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .small a:hover { text-decoration: underline; }
+
+  .note { color: var(--muted); }
+</style>
