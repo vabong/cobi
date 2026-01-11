@@ -1,12 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 
-const bandcamp = [
-  {
-    title: 'Echoes and Reflections',
-    url: 'https://telepathicbeing.bandcamp.com/album/echoes-and-reflections',
-    embed: 'https://bandcamp.com/EmbeddedPlayer/album=3516792777/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/',
-  },
+const bandcampAlbums = [
   {
     title: 'Transfigured Resonance',
     url: 'https://telepathicbeing.bandcamp.com/album/transfigured-resonance',
@@ -18,9 +13,27 @@ const bandcamp = [
     embed: 'https://bandcamp.com/EmbeddedPlayer/album=694006483/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/',
   },
   {
-    title: 'Cerberu, fiera crudele e diversa (Eight Tower Records)',
-    url: 'https://eighthtowerrecords.bandcamp.com/track/cobi-van-tonder-cerbero-fiera-crudele-e-diversa',
-    embed: 'PASTE-CERBERU-EMBED-SRC-HERE',
+    title: 'Echoes and Reflections',
+    url: 'https://telepathicbeing.bandcamp.com/album/echoes-and-reflections',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=3516792777/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/',
+  },
+];
+
+const bandcampTracks = [
+  {
+    title: 'Unexplained Sounds Group – 5th Annual Report (Various Artists)',
+    url: 'https://unexplainedsoundsgroup.bandcamp.com/album/unexplained-sounds-group-5th-annual-report',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=3308736620/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2172439945/transparent=true/',
+  },
+  {
+    title: 'Demonology In Dante\'s Inferno (Various Artists)',
+    url: 'https://eighthtowerrecords.bandcamp.com/album/demonology-in-dantes-inferno',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=55414864/size=small/bgcol=ffffff/linkcol=0687f5/track=3137335557/transparent=true/',
+  },
+  {
+    title: 'Alternate African Reality',
+    url: 'https://syrphe.bandcamp.com/album/alternate-african-reality-electronic-electroacoustic-and-experimental-music-from-africa-and-the-diaspora',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=2062834667/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=409857500/transparent=true/',
   },
 ];
 
@@ -44,24 +57,41 @@ const soundcloud = {
     <section class="block" aria-labelledby="support-heading">
       <h2 id="support-heading" class="section-title">Support via Bandcamp</h2>
 
-      <div class="stack" role="navigation" aria-label="Bandcamp embeds and links">
-        {bandcamp.map((item) => (
+      <div class="stack">
+        {bandcampAlbums.map((item) => (
           <div class="item">
             <h3 class="item-title">{item.title}</h3>
-
             <div class="embed">
               <iframe
-                title={`Bandcamp embed: ${item.title}`}
+                title={`Bandcamp album: ${item.title}`}
                 style="border: 0; width: 100%; height: 360px;"
                 src={item.embed}
                 seamless
               ></iframe>
             </div>
-
             <p class="small">
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                Open on Bandcamp
-              </a>
+              <a href={item.url} target="_blank" rel="noopener noreferrer">Open on Bandcamp</a>
+            </p>
+          </div>
+        ))}
+      </div>
+
+      <h3 class="section-sub">Selected tracks</h3>
+
+      <div class="stack tracks">
+        {bandcampTracks.map((item) => (
+          <div class="item track">
+            <h4 class="item-title">{item.title}</h4>
+            <div class="embed">
+              <iframe
+                title={`Bandcamp track: ${item.title}`}
+                style="border: 0; width: 100%; height: 140px;"
+                src={item.embed}
+                seamless
+              ></iframe>
+            </div>
+            <p class="small">
+              <a href={item.url} target="_blank" rel="noopener noreferrer">Open on Bandcamp</a>
             </p>
           </div>
         ))}
@@ -70,7 +100,6 @@ const soundcloud = {
 
     <section class="block" aria-labelledby="listen-heading">
       <h2 id="listen-heading" class="section-title">Listen via SoundCloud</h2>
-
       <div class="embed">
         <iframe
           title="SoundCloud playlist: Microtonal Collection"
@@ -82,11 +111,8 @@ const soundcloud = {
           src={soundcloud.embed}
         ></iframe>
       </div>
-
       <p class="small">
-        <a href={soundcloud.url} target="_blank" rel="noopener noreferrer">
-          Open playlist on SoundCloud
-        </a>
+        <a href={soundcloud.url} target="_blank" rel="noopener noreferrer">Open playlist on SoundCloud</a>
       </p>
     </section>
   </article>
@@ -94,23 +120,11 @@ const soundcloud = {
 
 <style>
   .music { text-align: left; }
+  .intro { color: var(--muted); margin: 6px 0 18px; line-height: 1.65; }
 
-  .intro {
-    color: var(--muted);
-    margin: 6px 0 18px;
-    line-height: 1.65;
-  }
-
-  .block {
-    margin-top: 22px;
-    padding-top: 18px;
-    border-top: 1px dashed var(--border);
-  }
-
-  .section-title {
-    margin: 0 0 12px;
-    font-weight: 400;
-  }
+  .block { margin-top: 22px; padding-top: 18px; border-top: 1px dashed var(--border); }
+  .section-title { margin: 0 0 12px; font-weight: 400; }
+  .section-sub { margin: 22px 0 10px; font-weight: 400; color: var(--muted); }
 
   .embed {
     border: 1px solid var(--border);
@@ -120,30 +134,14 @@ const soundcloud = {
     box-shadow: 0 1px 6px rgba(0,0,0,.04);
   }
 
-  .stack {
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-    margin-top: 12px;
-  }
+  .stack { display: flex; flex-direction: column; gap: 22px; margin-top: 12px; }
 
-  .item-title {
-    margin: 0 0 10px;
-    font-weight: 600;
-    font-style: italic;
-    letter-spacing: .1px;
-  }
+  .item-title { margin: 0 0 10px; font-weight: 600; font-style: italic; letter-spacing: .1px; }
 
-  .small {
-    margin: 10px 0 0;
-    color: var(--muted);
-    font-size: 14px;
-    line-height: 1.5;
-  }
+  .tracks .item { padding-top: 10px; border-top: 1px dashed var(--border); }
+  .tracks .item:first-child { border-top: none; padding-top: 0; }
 
-  .small a {
-    color: var(--accent);
-    text-decoration: none;
-  }
+  .small { margin: 10px 0 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+  .small a { color: var(--accent); text-decoration: none; }
   .small a:hover { text-decoration: underline; }
 </style>
