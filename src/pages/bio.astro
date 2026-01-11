@@ -1,7 +1,123 @@
 ---
 import Base from '../layouts/Base.astro';
 ---
+
 <Base title="Info & Bio">
-  <h1>Info & Bio</h1>
-  <p>Placeholder page. Content coming soon.</p>
+  <article class="post bio">
+    <h1>Info & Bio</h1>
+
+    <h2 class="name">Dr. Cobi van Tonder</h2>
+
+    <p class="lead">
+      Dr. Cobi van Tonder is an internationally active researcher and interdisciplinary artist
+      specializing in heritage acoustics, virtual acoustics, and immersive spatial audio.
+      She is currently a Research Fellow in the Department of Architecture at the University of Bologna,
+      and a former Marie Skłodowska-Curie Fellow at the University of York.
+    </p>
+
+    <p>
+      She has presented over forty works internationally across Europe, the United States, Africa and Asia,
+      and is the creator of the virtual heritage listening platform
+      <a href="https://acousticatlas.de" target="_blank" rel="noopener noreferrer">AcousticAtlas.de</a>.
+      Her work bridges artistic research, architecture, archaeology, and experimental sound practices,
+      positioning listening itself as an artistic, cultural, and conservation methodology.
+    </p>
+
+    <p>
+      Her artistic output explores microtonal tunings, difference tones, beating patterns, recursive virtual acoustics,
+      and infrasound-based audio–sensory hybrid experiences. Selected works include
+      <em>Vertical Time</em>, <em>Gala</em>, <em>Mutation II</em>, <em>Echoes and Reflections</em>,
+      <em>Goodbye Anthill</em>, <em>Delta Bioresonance Variations</em>, and <em>Half wave 1.5 Hz</em>.
+    </p>
+
+    <h3>Research & Academic Practice</h3>
+
+    <p>
+      Cobi holds a PhD in Digital Arts & Humanities (Music Composition) from Trinity College Dublin,
+      an MFA in Art Practice from Stanford University, and a B.Hons in Musicology from the University
+      of the Witwatersrand, Johannesburg.
+    </p>
+
+    <p>
+      Her research has been supported by major international funding bodies, including a Marie Skłodowska-Curie Fellowship,
+      Erasmus+ projects, and multiple institutional research grants. She has served as Organising Chair for the
+      Immersive 3D Audio (I3DA) Conferences 2023 and 2025, and is currently co-creating I3DA 2026.
+    </p>
+
+    <p>
+      She publishes widely in peer-reviewed journals and international conferences, including the
+      <em>Journal of the Acoustical Society of America</em>, Forum Acusticum, and I3DA,
+      and contributes to major edited volumes on sound, space, and heritage acoustics.
+    </p>
+
+    <h3>About the Work</h3>
+
+    <p>
+      Her practice is rooted in the exploration of sound as space and space as compositional material.
+      From early networked acoustic architectures to contemporary heritage auralisation systems,
+      her work constructs immersive listening environments that reveal invisible spatial structures
+      and cultural memory through sound.
+    </p>
+
+    <p>
+      Projects such as <em>The Audio Tunnel</em> and <em>The Persistence of Sound</em> pioneered live networked
+      acoustic displacement, linking real architectural spaces into recursive acoustic tunnels that allow
+      sound to travel, reverberate, and transform across geographic distance.
+    </p>
+
+    <h3>Artistic Focus</h3>
+
+    <p>
+      Her work spans composition, installation, sensory enclosures, sound sculpture, networked systems,
+      and immersive spatial audio. Core materials include microtonal pitch fields, beating patterns,
+      auditory illusions, slow transformations, and artificial acoustics as compositional substance.
+    </p>
+
+    <p>
+      Influences range from abstract expressionist painting and Japanese Zen gardens to drone music,
+      extended duration, immersion, spatial audio, and sensory hybrid practices combining sound with light,
+      touch, and architecture.
+    </p>
+
+    <h3>ORCID</h3>
+    <p>
+      <a href="https://orcid.org/0000-0001-9309-5632" target="_blank" rel="noopener noreferrer">
+        https://orcid.org/0000-0001-9309-5632
+      </a>
+    </p>
+  </article>
 </Base>
+
+<style>
+  .bio .name {
+    margin-top: 0;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: .2px;
+  }
+
+  .bio .lead {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 16px;
+  }
+
+  .bio h3 {
+    margin-top: 26px;
+    font-weight: 500;
+  }
+
+  .bio p {
+    line-height: 1.7;
+    margin: 10px 0;
+  }
+
+  .bio a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+
+  .bio a:hover {
+    text-decoration: underline;
+  }
+</style>
