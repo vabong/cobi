@@ -3,13 +3,13 @@ title: "Acoustic Atlas"
 publishDate: "2024-01-01"
 cover: "/images/blog/20190101acoustic-atlas/cover.png"
 tags: []
----# Acoustic Atlas
+---
 
-*   Jan 1, 2024
+# Acoustic Atlas
 
-[
+*Jan 1, 2024*
 
-![](/images/blog/20190101acoustic-atlas/image-1.png)
+[![](/images/blog/20190101acoustic-atlas/image-1.png)
 
 ](https://acousticatlas.de)
 
