@@ -9,18 +9,18 @@ import Base from '../layouts/Base.astro';
     <h2 class="name">Dr. Cobi van Tonder</h2>
 
     <p class="lead">
-      Dr. Cobi van Tonder is an internationally active researcher and interdisciplinary artist
+      Dr. Cobi van Tonder is an internationally active composer, researcher, and interdisciplinary artist
       specializing in heritage acoustics, virtual acoustics, and immersive spatial audio.
       She is currently a Research Fellow in the Department of Architecture at the University of Bologna,
-      and a former Marie Skłodowska-Curie Fellow at the University of York.
+      and a former Marie Skłodowskaurie Fellow at the University of York.
     </p>
 
     <p>
-      She has presented over forty works internationally across Europe, the United States, Africa and Asia,
-      and is the creator of the virtual heritage listening platform
-      <a href="https://acousticatlas.de" target="_blank" rel="noopener noreferrer">AcousticAtlas.de</a>.
-      Her work bridges artistic research, architecture, archaeology, and experimental sound practices,
-      positioning listening itself as an artistic, cultural, and conservation methodology.
+      She is a composer working across instrumental, electronic, and spatial sound practices,
+      and has presented over forty works internationally across Europe, the United States, Africa and Asia.
+      She is the creator of the virtual heritage listening platform
+      <a href="https://acousticatlas.de" target="_blank" rel="noopener noreferrer">AcousticAtlas.de</a>,
+      through which listening becomes an artistic, architectural, and conservation methodology.
     </p>
 
     <p>
@@ -91,21 +91,23 @@ import Base from '../layouts/Base.astro';
 
   .bio .lead {
     font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 16px;
+    line-height: 1.75;
+    margin-bottom: 18px;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .bio p {
+    line-height: 1.75;
+    margin: 12px 0;
+    text-align: justify;
+    text-justify: inter-word;
   }
 
   .bio h3 {
     margin-top: 26px;
     font-weight: 500;
   }
-
-  .bio p {
-  line-height: 1.75;
-  margin: 12px 0;
-  text-align: justify;
-  text-justify: inter-word;
-}
 
   .bio a {
     color: var(--accent);
