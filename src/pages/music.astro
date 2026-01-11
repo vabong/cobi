@@ -1,35 +1,34 @@
 ---
 import Base from '../layouts/Base.astro';
 
+const bandcamp = [
+  {
+    title: 'Echoes and Reflections',
+    url: 'https://telepathicbeing.bandcamp.com/album/echoes-and-reflections',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=3516792777/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/',
+  },
+  {
+    title: 'Transfigured Resonance',
+    url: 'https://telepathicbeing.bandcamp.com/album/transfigured-resonance',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=1870514498/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/',
+  },
+  {
+    title: 'SNOW',
+    url: 'https://telepathicbeing.bandcamp.com/album/snow',
+    embed: 'https://bandcamp.com/EmbeddedPlayer/album=694006483/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/',
+  },
+  {
+    title: 'Cerberu, fiera crudele e diversa (Eight Tower Records)',
+    url: 'https://eighthtowerrecords.bandcamp.com/track/cobi-van-tonder-cerbero-fiera-crudele-e-diversa',
+    embed: 'PASTE-CERBERU-EMBED-SRC-HERE',
+  },
+];
+
 const soundcloud = {
   title: 'Microtonal Collection (SoundCloud)',
   url: 'https://soundcloud.com/otoplasma/sets/microtonal-collection',
   embed: 'https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/otoplasma/sets/microtonal-collection&color=%23442a25&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
 };
-
-const bandcamp = [
-  {
-    title: 'Echoes and Reflections',
-    url: 'https://telepathicbeing.bandcamp.com/album/echoes-and-reflections',
-    embed: 'https://bandcamp.com/EmbeddedPlayer/album=0/size=large/bgcol=ffffff/linkcol=442a25/tracklist=false/transparent=true/',
-    note: 'If you choose to purchase (including pay-what-you-want when available), it directly supports future work.',
-  },
-  {
-    title: 'Transfigured Resonance',
-    url: 'https://telepathicbeing.bandcamp.com/album/transfigured-resonance',
-    embed: 'https://bandcamp.com/EmbeddedPlayer/album=0/size=large/bgcol=ffffff/linkcol=442a25/tracklist=false/transparent=true/',
-  },
-  {
-    title: 'SNOW',
-    url: 'https://telepathicbeing.bandcamp.com/album/snow',
-    embed: 'https://bandcamp.com/EmbeddedPlayer/album=0/size=large/bgcol=ffffff/linkcol=442a25/tracklist=false/transparent=true/',
-  },
-  {
-    title: 'Cerberu, fiera crudele e diversa (Eight Tower Records)',
-    url: 'https://eighthtowerrecords.bandcamp.com/track/cobi-van-tonder-cerbero-fiera-crudele-e-diversa',
-    embed: 'https://bandcamp.com/EmbeddedPlayer/track=0/size=large/bgcol=ffffff/linkcol=442a25/tracklist=false/transparent=true/',
-  },
-];
 ---
 
 <Base title="Music">
@@ -37,12 +36,40 @@ const bandcamp = [
     <h1>Music</h1>
 
     <p class="intro">
-      You’re invited to listen here. If you’d like to support my work, purchasing on Bandcamp (including
-      pay-what-you-want when enabled) helps me continue composing, researching, and publishing new projects.
+      You’re invited to listen here. If you’d like to support my work, purchasing on Bandcamp
+      (including pay-what-you-want when available) directly supports the continuation of my
+      artistic and research practice.
     </p>
 
+    <section class="block" aria-labelledby="support-heading">
+      <h2 id="support-heading" class="section-title">Support via Bandcamp</h2>
+
+      <div class="stack" role="navigation" aria-label="Bandcamp embeds and links">
+        {bandcamp.map((item) => (
+          <div class="item">
+            <h3 class="item-title">{item.title}</h3>
+
+            <div class="embed">
+              <iframe
+                title={`Bandcamp embed: ${item.title}`}
+                style="border: 0; width: 100%; height: 360px;"
+                src={item.embed}
+                seamless
+              ></iframe>
+            </div>
+
+            <p class="small">
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                Open on Bandcamp
+              </a>
+            </p>
+          </div>
+        ))}
+      </div>
+    </section>
+
     <section class="block" aria-labelledby="listen-heading">
-      <h2 id="listen-heading" class="section-title">Listen here</h2>
+      <h2 id="listen-heading" class="section-title">Listen via SoundCloud</h2>
 
       <div class="embed">
         <iframe
@@ -57,41 +84,10 @@ const bandcamp = [
       </div>
 
       <p class="small">
-        Prefer opening SoundCloud directly?
-        <a href={soundcloud.url} target="_blank" rel="noopener noreferrer">Open playlist</a>.
+        <a href={soundcloud.url} target="_blank" rel="noopener noreferrer">
+          Open playlist on SoundCloud
+        </a>
       </p>
-    </section>
-
-    <section class="block" aria-labelledby="support-heading">
-      <h2 id="support-heading" class="section-title">Support via Bandcamp</h2>
-
-      <p class="small">
-        Bandcamp purchases are the most direct way to support independent work.
-      </p>
-
-      <div class="stack" role="navigation" aria-label="Bandcamp embeds and links">
-        {bandcamp.map((item) => (
-          <div class="item">
-            <h3 class="item-title">{item.title}</h3>
-
-            <div class="embed">
-              <iframe
-                title={`Bandcamp embed: ${item.title}`}
-                style="border: 0; width: 100%; height: 120px;"
-                src={item.embed}
-                seamless
-              ></iframe>
-            </div>
-
-            <p class="small">
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                Open on Bandcamp
-              </a>
-              {item.note ? <span class="note"> — {item.note}</span> : null}
-            </p>
-          </div>
-        ))}
-      </div>
     </section>
   </article>
 </Base>
@@ -127,18 +123,8 @@ const bandcamp = [
   .stack {
     display: flex;
     flex-direction: column;
-    gap: 18px;
+    gap: 22px;
     margin-top: 12px;
-  }
-
-  .item {
-    padding-top: 12px;
-    border-top: 1px dashed var(--border);
-  }
-
-  .item:first-child {
-    border-top: none;
-    padding-top: 0;
   }
 
   .item-title {
@@ -160,6 +146,4 @@ const bandcamp = [
     text-decoration: none;
   }
   .small a:hover { text-decoration: underline; }
-
-  .note { color: var(--muted); }
 </style>
