@@ -133,3 +133,25 @@ const soundcloud = {
   .section-sub { margin: 22px 0 10px; font-weight: 400; color: var(--muted); }
 
   .embed {
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    overflow: hidden;
+    background: var(--card);
+    box-shadow: 0 1px 6px rgba(0,0,0,.04);
+  }
+
+  .embed--dark {
+    background: #333;
+    border-color: rgba(255,255,255,.08);
+  }
+
+  .stack { display: flex; flex-direction: column; gap: 22px; margin-top: 12px; }
+  .item-title { margin: 0 0 10px; font-weight: 600; font-style: italic; letter-spacing: .1px; }
+
+  .tracks .item { padding-top: 10px; border-top: 1px dashed var(--border); }
+  .tracks .item:first-child { border-top: none; padding-top: 0; }
+
+  .small { margin: 10px 0 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+  .small a { color: var(--accent); text-decoration: none; }
+  .small a:hover { text-decoration: underline; }
+</style>
