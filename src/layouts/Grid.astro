@@ -20,8 +20,8 @@ function withBase(url) {
       <p class="empty">No posts yet.</p>
     ) : (
       <div class="grid">
-        {posts.map(({ data, slug }) => (
-          <a class="card" href={`${base}blog/${slug}/`}>
+        {posts.map(({ data }) => (
+          <div class="card card--disabled" aria-disabled="true">
             {data.cover ? (
               <img
                 src={withBase(data.cover)}
@@ -30,15 +30,17 @@ function withBase(url) {
                 loading="lazy"
               />
             ) : (
-              <div class="thumb placeholder">No image</div>
+              <div class="thumb placeholder" aria-hidden="true">No image</div>
             )}
             <div class="card-body">
               <h3 class="card-title">{data.title}</h3>
               {data.publishDate && (
-                <p class="card-meta">{new Date(data.publishDate).toLocaleDateString()}</p>
+                <p class="card-meta">
+                  {new Date(data.publishDate).toLocaleDateString()}
+                </p>
               )}
             </div>
-          </a>
+          </div>
         ))}
       </div>
     )}
@@ -54,9 +56,9 @@ function withBase(url) {
       grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
       gap: 24px;
     }
+
     .card {
       display: block;
-      text-decoration: none;
       color: inherit;
       border: 1px solid #eee;
       border-radius: 12px;
@@ -64,7 +66,16 @@ function withBase(url) {
       background: #fff;
       transition: box-shadow .2s ease, transform .2s ease;
     }
-    .card:hover { box-shadow: 0 6px 20px rgba(0,0,0,.08); transform: translateY(-1px); }
+
+    /* keep the same nice hover, but remove the "clickable" cues */
+    .card--disabled {
+      cursor: default;
+      user-select: none;
+    }
+    .card--disabled:hover {
+      box-shadow: 0 6px 20px rgba(0,0,0,.08);
+      transform: translateY(-1px);
+    }
 
     .thumb {
       display: block;
