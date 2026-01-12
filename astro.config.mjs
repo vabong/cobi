@@ -2,8 +2,9 @@ import { defineConfig } from 'astro/config';
 
 /**
  * Rewrites rendered HTML from Markdown/Content Collections:
- *   src="/images/..." -> src="/cobi/images/..."
- * Also rewrites <a href="/..."> similarly (optional but handy).
+ *   src="/images/..." -> src="/images/..."
+ *   href="/..." stays clean root-relative.
+ * This is required for GitHub Pages + custom domain stability.
  */
 function rehypePrefixBase(options = {}) {
   const base = options.base || '/';
@@ -19,7 +20,7 @@ function rehypePrefixBase(options = {}) {
 
   const prefix = (u) => {
     if (shouldSkip(u)) return u;
-    if (!u.startsWith('/')) return u; // rewrite only root-absolute URLs
+    if (!u.startsWith('/')) return u;
     return `${normalizedBase}${u.replace(/^\/+/, '')}`;
   };
 
@@ -27,15 +28,12 @@ function rehypePrefixBase(options = {}) {
     if (!node || typeof node !== 'object') return;
 
     if (node.type === 'element' && node.properties) {
-      // Markdown images
       if (node.tagName === 'img' && node.properties.src) {
         node.properties.src = prefix(node.properties.src);
       }
-      // Markdown links (optional)
       if (node.tagName === 'a' && node.properties.href) {
         node.properties.href = prefix(node.properties.href);
       }
-      // srcset (optional)
       if (typeof node.properties.srcset === 'string') {
         node.properties.srcset = node.properties.srcset
           .split(',')
@@ -55,10 +53,12 @@ function rehypePrefixBase(options = {}) {
 }
 
 export default defineConfig({
-  site: 'https://example.com',
-  base: '/cobi/',
+  site: 'https://otoplasma.com',
+
+  // ROOT DEPLOYMENT (no subfolder)
+  base: '/',
+
   markdown: {
-    // IMPORTANT: tuple format so options are applied
-    rehypePlugins: [[rehypePrefixBase, { base: '/cobi/' }]],
+    rehypePlugins: [[rehypePrefixBase, { base: '/' }]],
   },
 });
