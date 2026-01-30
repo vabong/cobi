@@ -1,6 +1,6 @@
 ---
 title: "Lullaby for InfrasoundBed"
-publishDate: 2011-08-10
+publishDate: "2011-08-10"
 description: "Infrasound sound installation (40min loop) — Toffee Festival, City Hall Cape Town (2011)."
 tags:
   - Innovation
