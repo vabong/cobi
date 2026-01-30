@@ -1,4 +1,6 @@
 ---
+export const prerender = true;
+
 import Post from "../../layouts/Post.astro";
 import { getCollection } from "astro:content";
 
@@ -6,11 +8,14 @@ export async function getStaticPaths() {
   const posts = await getCollection("blog");
 
   return posts.map((post) => {
-    // post.data.date is assumed present (Date or string parsable)
-    const d = new Date(post.data.date);
-    const yyyy = String(d.getFullYear());
-    const mm = String(d.getMonth() + 1).padStart(2, "0");
-    const dd = String(d.getDate()).padStart(2, "0");
+    const d =
+      post.data.date instanceof Date
+        ? post.data.date
+        : new Date(post.data.date);
+
+    const yyyy = String(d.getUTCFullYear());
+    const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
+    const dd = String(d.getUTCDate()).padStart(2, "0");
 
     return {
       params: { path: [yyyy, mm, dd, post.slug] },
