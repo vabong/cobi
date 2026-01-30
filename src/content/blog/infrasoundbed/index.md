@@ -23,7 +23,6 @@ tags:
 draft: false
 ---
 
-![Lullaby for InfrasoundBed documentation collage](/images/blog/infrasoundbed/infrasoundbed-collage.webp)
 
 *Lullaby for InfrasoundBed (40min loop) – Toffee Festival, City Hall, Cape Town.*
 
@@ -35,12 +34,3 @@ Created for Toffee Festival, City Hall, Cape Town, 2011.
 
 ---
 
-![Ableton control / bed view](/images/blog/infrasoundbed/infrasoundbed-control-bed.jpg)
-
----
-
-![Ableton Live waveforms](/images/blog/infrasoundbed/infrasoundbed-ableton-waveforms.jpg)
-
----
-
-![Installation wide view](/images/blog/infrasoundbed/infrasoundbed-installation-wide.jpg)
