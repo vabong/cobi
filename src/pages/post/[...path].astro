@@ -8,10 +8,11 @@ export async function getStaticPaths() {
   const posts = await getCollection("blog");
 
   return posts.map((post) => {
+    // publishDate is defined as a STRING in your schema
     const d =
-      post.data.date instanceof Date
-        ? post.data.date
-        : new Date(post.data.date);
+      post.data.publishDate instanceof Date
+        ? post.data.publishDate
+        : new Date(post.data.publishDate);
 
     const yyyy = String(d.getUTCFullYear());
     const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
@@ -25,10 +26,15 @@ export async function getStaticPaths() {
 }
 
 const { slug } = Astro.props;
+
 const posts = await getCollection("blog");
 const post = posts.find((p) => p.slug === slug);
-if (!post) throw new Error(`Post not found: ${slug}`);
 
+if (!post) {
+  throw new Error(`Post not found: ${slug}`);
+}
+
+// Astro renders the markdown for us
 const { Content } = await post.render();
 ---
 
