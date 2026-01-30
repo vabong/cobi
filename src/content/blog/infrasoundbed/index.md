@@ -1,3 +1,28 @@
+---
+title: "Lullaby for InfrasoundBed"
+publishDate: "2011-08-10"
+description: "Infrasound sound installation (40min loop) — Toffee Festival, City Hall, Cape Town (2011)."
+cover: "/images/blog/infrasoundbed/infrasoundbed-collage.webp"
+tags:
+  - Innovation
+  - Interactive
+  - Infrasound
+  - SoundInstallation
+  - Body
+  - SpatialAudio
+  - Intermedia
+  - healing
+  - microtonal
+  - meditation
+  - telepathy
+  - infrasound
+  - vibration
+  - installation
+  - planets
+  - differencetones
+draft: false
+---
+
 ![Lullaby for InfrasoundBed documentation collage](/images/blog/infrasoundbed/infrasoundbed-collage.webp)
 
 *Lullaby for InfrasoundBed (40min loop) – Toffee Festival, City Hall, Cape Town.*
@@ -19,8 +44,3 @@ Created for Toffee Festival, City Hall, Cape Town, 2011.
 ---
 
 ![Installation wide view](/images/blog/infrasoundbed/infrasoundbed-installation-wide.jpg)
-
----
-
-**Tags:**  
-#Innovation #Interactive #Infrasound #SoundInstallation #Body #SpatialAudio #Intermedia
