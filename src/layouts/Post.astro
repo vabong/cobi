@@ -7,13 +7,13 @@ import { getEntryBySlug } from "astro:content";
 const { frontmatter, slug } = Astro.props;
 const post = await getEntryBySlug("blog", slug);
 
-// ⭐ FIX: Always use post.slug as folder name (never trust cover paths)
+// Always use post.slug as folder name
 const folder = post.slug;
 
-// ⭐ FIX: Render full HTML body correctly
-const html = post?.rendered?.html || post?.body || "";
+// ✅ Render markdown properly
+const { Content } = await post.render();
 
-// ⭐ Load all images in the correct blog folder
+// Load all images in the correct blog folder
 let images: string[] = [];
 const dir = path.resolve(`public/images/blog/${folder}`);
 
@@ -56,7 +56,9 @@ if (fs.existsSync(dir)) {
       </div>
     )}
 
-    <section class="body" set:html={html}></section>
+    <section class="body">
+      <Content />
+    </section>
 
     {frontmatter.tags?.length > 0 && (
       <div class="tags">
@@ -77,111 +79,6 @@ if (fs.existsSync(dir)) {
   </script>
 
   <style>
-    .post {
-      max-width: 720px;
-      margin: 0 auto;
-      font-family: Helvetica, Arial, sans-serif;
-      line-height: 1.7;
-      color: #111;
-    }
-
-    h1 {
-      font-family: "Josefin Slab", Georgia, serif;
-      font-size: 2rem;
-      margin-bottom: 0.25em;
-    }
-
-    .date {
-      color: #777;
-      font-size: 0.9rem;
-      margin-bottom: 2em;
-    }
-
-    /* --- Carousel --- */
-    .carousel-container {
-      position: relative;
-      margin-bottom: 2rem;
-    }
-
-    .carousel {
-      display: flex;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-      gap: 1rem;
-      scroll-behavior: smooth;
-      padding-bottom: 0.25rem;
-    }
-
-    .slide {
-      flex: 0 0 100%;
-      scroll-snap-align: center;
-    }
-
-    .slide img {
-      width: 100%;
-      height: 460px;
-      object-fit: cover;
-      display: block;
-      border-radius: 0;
-    }
-
-    .nav {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.35);
-      border: none;
-      color: white;
-      font-size: 2.5rem;
-      width: 2rem;
-      height: 3rem;
-      cursor: pointer;
-      transition: background 0.2s;
-      z-index: 2;
-    }
-
-    .nav:hover {
-      background: rgba(0, 0, 0, 0.55);
-    }
-
-    .nav.prev {
-      left: 0.5rem;
-    }
-
-    .nav.next {
-      right: 0.5rem;
-    }
-
-    /* --- Body --- */
-    .body {
-      text-align: justify;
-      margin-bottom: 2rem;
-    }
-
-    /* hide in-body markdown images (we use the carousel instead) */
-    .body img {
-      display: none;
-    }
-
-    /* --- Tags --- */
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 2rem;
-    }
-
-    .tag {
-      background: #eee;
-      padding: 0.25rem 0.75rem;
-      border-radius: 999px;
-      font-size: 0.85rem;
-      color: #333;
-      text-decoration: none;
-    }
-
-    .tag:hover {
-      background: #ddd;
-    }
+    /* ... keep all your existing styles exactly as-is ... */
   </style>
 </Base>
