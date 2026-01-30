@@ -10,8 +10,8 @@ const post = await getEntryBySlug("blog", slug);
 // ⭐ FIX: Always use post.slug as folder name (never trust cover paths)
 const folder = post.slug;
 
-// ⭐ FIX: Render full HTML body correctly
-const html = post?.rendered?.html || post?.body || "";
+// ✅ Render markdown properly so text doesn’t show as raw `![...](...)`
+const { Content } = await post.render();
 
 // ⭐ Load all images in the correct blog folder
 let images: string[] = [];
@@ -56,7 +56,9 @@ if (fs.existsSync(dir)) {
       </div>
     )}
 
-    <section class="body" set:html={html}></section>
+    <section class="body">
+      <Content />
+    </section>
 
     {frontmatter.tags?.length > 0 && (
       <div class="tags">
