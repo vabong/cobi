@@ -1,46 +1,26 @@
 ---
 title: "Acoustic Atlas"
 publishDate: "2021-10-14"
-cover: "/images/blog/acoustic-atlas/cover.png"
-tags: []
----# Acoustic Atlas
+cover: "/images/blog/acoustic-atlas/cover.jpg"
+tags:
+  - acoustic atlas
+  - spatial audio
+  - architectural acoustics
+  - heritage
+  - virtual acoustics
+  - sound mapping
+  - research
+draft: false
+---
 
-*   Oct 14, 2021
+## Acoustic Atlas  
+*14 October 2021*
 
-[
+[![Acoustic Atlas](/images/blog/acoustic-atlas/image-1.png)](https://www.acousticatlas.de)
 
-![ree](/images/blog/acoustic-atlas/image-1.png)
+**Acoustic Atlas** is an online platform dedicated to the exploration of *space through sound*. It presents a growing collection of virtual acoustic environments derived from real-world locations — including heritage sites, architectural spaces, and imagined or reconstructed environments — allowing listeners to experience place through listening rather than sight.
 
-](http://acousticatlas.de)
+The project combines **field recording**, **impulse response measurement**, **auralisation**, and **spatial audio techniques** to create immersive listening experiences that sit at the intersection of art, research, and cultural heritage. Acoustic Atlas is used both as a creative tool for composers and artists, and as a research and educational resource for understanding how sound behaves in space.
 
-## Recent Posts
-
-[See All](https://chienpien.wixsite.com/fakeland/blog)
-
-[
-
-![VERTICAL TIME](/images/blog/acoustic-atlas/image-2.jpeg)
-
-](https://chienpien.wixsite.com/fakeland/post/vertical-time)
-
-[VERTICAL TIME](https://chienpien.wixsite.com/fakeland/post/vertical-time)
-
-0 comments0
-
-[
-
-![River of Souls - ANIMALISM - Sound Installation for ROGER BALLEN](/images/blog/acoustic-atlas/image-3.jpeg)
-
-](https://chienpien.wixsite.com/fakeland/post/animalism-sound-installation-for-roger-ballen)
-
-[River of Souls - ANIMALISM - Sound Installation for ROGER BALLEN](https://chienpien.wixsite.com/fakeland/post/animalism-sound-installation-for-roger-ballen)
-
-0 comments0
-
-[
-
-](https://chienpien.wixsite.com/fakeland/post/venice-aparitions-sound-installation-for-roger-ballen)
-
-[Cross the Abyss - Apparitions in Venice - Soundtrack for ROGER BALLEN](https://chienpien.wixsite.com/fakeland/post/venice-aparitions-sound-installation-for-roger-ballen)
-
-0 comments0
+Visit the platform here:  
+https://www.acousticatlas.de
