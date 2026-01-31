@@ -1,7 +1,7 @@
 ---
 title: "Echoes & Reflections"
 publishDate: "2024-06-23"
-cover: "/images/blog/echoes-reflections/cover.png"
+cover: "/images/blog/echoes-reflections/1.png"
 tags:
   - echo
   - albums
