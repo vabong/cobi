@@ -1,16 +1,28 @@
 ---
-title: "New locations added to Acoustic Atlas!"
+title: "New archaeological locations added to Acoustic Atlas!"
 publishDate: "2024-06-23"
 cover: "/images/blog/many-locations-added-to-acoustic-atlas/cover.png"
-tags: []
----# New archaeological locations added to Acoustic Atlas!
+tags:
+  - acoustic atlas
+  - archaeology
+  - heritage
+  - spatial audio
+  - virtual acoustics
+  - immersive listening
+  - Venice
+  - UAE
+  - sound mapping
+draft: false
+---
 
-*   Jun 23, 2024
+## New archaeological locations added to Acoustic Atlas!  
+*23 June 2024*
 
-[
+[![Acoustic Atlas locations](/images/blog/many-locations-added-to-acoustic-atlas/image-1.png)](https://www.acousticatlas.de/experience)
 
-![ree](/images/blog/many-locations-added-to-acoustic-atlas/image-1.png)
+There are now **over 60 locations** available on **Acoustic Atlas**, including a range of newly added archaeological and heritage sites from **Venice**, locations across the **United Arab Emirates**, and several other sites throughout **Italy**.
 
-](https://www.acousticatlas.de/experience)
+These additions expand the platform’s growing collection of virtual acoustic environments, offering new possibilities for immersive listening, research, and creative exploration of space, sound, and heritage.
 
-There are now 60 locations on Acoustic Atlas.. including various new sites from Venice, sites from the UAE and other Italian locations.
+Explore the locations here:  
+https://www.acousticatlas.de/experience
