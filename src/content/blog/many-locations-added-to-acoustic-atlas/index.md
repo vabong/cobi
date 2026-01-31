@@ -1,5 +1,5 @@
 ---
-title: "New archaeological locations added to Acoustic Atlas!"
+title: "New locations added to Acoustic Atlas!"
 publishDate: "2024-06-23"
 cover: "/images/blog/many-locations-added-to-acoustic-atlas/cover.png"
 tags: []
