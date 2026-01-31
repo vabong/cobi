@@ -16,7 +16,6 @@ draft: false
 ## Acoustic Atlas  
 *14 October 2021*
 
-[![Acoustic Atlas](/images/blog/acoustic-atlas/image-1.png)](https://www.acousticatlas.de)
 
 **Acoustic Atlas** is an online platform dedicated to the exploration of *space through sound*. It presents a growing collection of virtual acoustic environments derived from real-world locations — including heritage sites, architectural spaces, and imagined or reconstructed environments — allowing listeners to experience place through listening rather than sight.
 
