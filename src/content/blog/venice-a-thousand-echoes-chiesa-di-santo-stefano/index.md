@@ -1,7 +1,7 @@
 ---
 title: "Venice a Thousand Echoes – Chiesa di Santo Stefano"
 publishDate: "2024-04-07"
-cover: "/images/blog/venice-a-thousand-echoes-chiesa-di-santo-stefano/cover.png"
+cover: "/images/blog/venice-a-thousand-echoes-chiesa-di-santo-stefano/cover.jpg"
 tags:
   - Venice
   - acoustic atlas
