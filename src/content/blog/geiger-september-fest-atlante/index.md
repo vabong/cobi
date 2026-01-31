@@ -1,80 +1,99 @@
 ---
-title: "Geiger September Fest - Atlante "
+title: "Geiger September Fest – Atlante"
 publishDate: "2022-04-09"
 cover: "/images/blog/geiger-september-fest-atlante/cover.png"
-tags: []
----# Geiger September Fest - Atlante
+tags:
+  - drone
+  - microtonal
+  - performance
+  - electronic music
+  - infrasound
+  - experimental music
+  - electroacoustic
+  - Africa
+  - diaspora
+  - festival
+draft: false
+---
 
-*   Apr 9, 2022
+## Geiger September Fest – Atlante  
+*9 April 2022*
 
-![ree](/images/blog/geiger-september-fest-atlante/image-1.png)
+![](/images/blog/geiger-september-fest-atlante/image-1.png)
 
-For several years, GEIGER have discussed with Berlin-based artist, researcher, and label manager Cedrik Fermont about collaborating on some of his projects. Following more than two decades of research in alternative electronic, experimental, and noise music in and from Asia and Africa, he recently published some compilations dedicated to this topic and several essays about electroacoustic, noise, and experimental music on these continents. With the release of the compilation CD ”Alternate African Reality – Electronic, electro acoustic and experimental from Africa and the diaspora” in 2020, we invited Cedrik to curate this festival together with us, with this CD as a starting point. The history of electronic and experimental music in Africa roughly started in the 1950s (with the notable exception of Halim El-Dabh in 1944) and today this music landscape is a rich and various one.
+---
 
-///////////////////////////////////////////////
+For several years, **GEIGER** had been in conversation with Berlin-based artist, researcher, and label manager **Cedrik Fermont** about collaborating on one of his projects. Following more than two decades of research into alternative electronic, experimental, and noise music in and from **Asia and Africa**, Cedrik has published several compilations and essays dedicated to these fields.
 
-Alternate Africa.
+With the release of the compilation CD *Alternate African Reality – Electronic, electroacoustic and experimental music from Africa and the diaspora* in 2020, GEIGER invited Cedrik to curate this festival together with them, using the CD as a conceptual starting point. The history of electronic and experimental music in Africa began roughly in the 1950s (with the notable exception of **Halim El-Dabh in 1944**), and today this musical landscape is rich, diverse, and evolving.
 
-A new reality or better say another reality, another view on Africa, far from the usual clichés, Alternate Africa aims to challenge how the world perceives music in and from Africa and its varied diaspora and cultures.
+---
 
-This is neither Afrofuturism, nor the future of music, this is not some kind of exceptional music from Africa, this is one of the many current realities: music from Africa and its diaspora is not stuck into traditional memes, it’s vibrant, innovative and travels as fast as the speed of light, like everywhere else, but with one notable difference: its lack of representation outside of the continent.
+## Alternate Africa
 
-Electronic, electroacoustic, free improvised music do not belong to a geographic place (anymore?), rather they belong to an era. Our contemporary era is hyper connected and the past two decades have seen the music world embracing the digital age. If there is a new geography, we will find it inside this new world, as imperfect as it is, as elitist it still can be, rhizomatic networks are under permanent constructions.
+A new reality — or perhaps better, *another* reality. **Alternate Africa** seeks to challenge how music in and from Africa and its varied diaspora is perceived, moving far beyond familiar clichés.
 
-We find artists who embrace full digital technology, others whose music archives blend languages, culture, ancient and modern technology, cut-up techniques meeting turntablism or journalistic adventures, cinematic electroacoustic music meets free improvisation. We all use similar technologies and add our own cultural imprints that rather than creating larger gaps, bring colourful ideas and feedback of cultural exchanges.
+This is neither Afrofuturism nor a speculative future of music. It is not an exceptional or exotic outlier. Rather, it represents one of many present realities: music from Africa and its diaspora is vibrant, innovative, and travels as fast as anywhere else in the world — with one crucial difference: its persistent lack of representation outside the continent.
 
-These networks spread their arms in every direction, once and for all, we wish this to be an experience shared by everyone and not a one way street; we build bridges, not cabinets of curiosities!
+Electronic, electroacoustic, and free improvised music no longer belong to specific geographic places; instead, they belong to an era. Our contemporary world is hyper-connected, and over the past two decades the music ecosystem has deeply embraced digital culture. If a new geography exists, it is embedded within this networked world — imperfect, sometimes elitist, yet continuously reshaped through rhizomatic connections.
 
-Electroacoustic, experimental and other forms of electronic music are not new on the continent: from Halib El-Dab’s (proto) musique concrete experiments in 1944 in Egypt, to June Schneider’s multimedia installations in the 1970s’ South Africa and today’s young composers all over the continent, there is a whole world of sounds that has been put aside for too long and we hope this small introduction will engage the listeners and the players into deeper conversations and collaborations.
+Some artists fully embrace digital technologies, while others work with archives blending language, culture, ancient and modern tools. Cut-up techniques meet turntablism; journalistic exploration merges with cinematic electroacoustic composition; free improvisation intersects with sound art. Shared technologies become sites of cultural exchange rather than division.
 
-Cedrik Fermont, festival co-producer
+These networks extend in all directions. The goal is an experience shared collectively — not a one-way gaze. **We build bridges, not cabinets of curiosities.**
 
-//////////////////////////////////////////////////////////////
+Electroacoustic, experimental, and electronic music have long histories on the African continent: from Halim El-Dabh’s proto–musique concrète experiments in 1944 Egypt, to June Schneider’s multimedia installations in 1970s South Africa, to today’s young composers across the continent. A vast sonic world has been sidelined for too long. This festival hopes to invite deeper conversations, listening, and collaboration.
 
-[#drone](https://chienpien.wixsite.com/fakeland/blog/hashtags/drone) [#perormance](https://chienpien.wixsite.com/fakeland/blog/hashtags/perormance) [#differencetones](https://chienpien.wixsite.com/fakeland/blog/hashtags/differencetones) [#infrasound](https://chienpien.wixsite.com/fakeland/blog/hashtags/infrasound) [#microtonal](https://chienpien.wixsite.com/fakeland/blog/hashtags/microtonal)
+*Cedrik Fermont, festival co-producer*
 
-Duma (KE)
+---
 
-In 2019 Martin Kanja (aka Lord Spike Heart) (vocals) and Sam Karugu (guitarist, producer), both emerging from Nairobi’s underground metal scene, formed Duma. Their debut album fuses hardcore punk and thrash metal with noise, taking the African metal scene into new, experimental territories. The lyrics depict the band’s everyday life: love, hate, drugs, being young and broke. But there are also songs such as Pembe 666, which includes passages from the Book of Revelation in Swahili.
+## Artists
 
-[https://nyegenyegetapes.bandcamp.com/album/duma](https://nyegenyegetapes.bandcamp.com/album/duma)
+### Duma (KE)
+Formed in 2019 by **Martin Kanja (Lord Spike Heart)** (vocals) and **Sam Karugu** (guitar, production), Duma emerged from Nairobi’s underground metal scene. Their debut album fuses hardcore punk and thrash metal with noise, pushing African metal into experimental territory. Lyrics explore everyday life — love, hate, drugs, precarity — alongside apocalyptic imagery such as *Pembe 666*, which incorporates passages from the Book of Revelation in Swahili.
 
-FRKTL (EG)
+https://nyegenyegetapes.bandcamp.com/album/duma
 
-FRKTL is the solo project of British- Egyptian interdisciplinary artist Sarah Badr, now based in Riga. A classically trained multi-instrumentalist, she incorporates live sampling and improvisation, vocal manipulation, field recordings and generative rhythms to compose immersive sound explorations. Most recently, visual sound spatialisation technologies allow her to examine the relation between form and place in digital spaces. Over the past decade, Badr’s artistic practise has expounded on mixed reality and world creation through CGI, augmented scene capture, and sound design.
+---
 
-[https://sarahbadr.com/](https://sarahbadr.com/)
+### FRKTL (EG)
+**FRKTL** is the solo project of British–Egyptian interdisciplinary artist **Sarah Badr**, now based in Riga. A classically trained multi-instrumentalist, she integrates live sampling, improvisation, vocal manipulation, field recordings, and generative rhythms. Her recent work explores visual sound spatialisation and mixed-reality world-building through CGI, augmented capture, and sound design.
 
-[https://frktl.com/](https://frktl.com/)
+https://sarahbadr.com/  
+https://frktl.com/
 
-Cedrik Fermont (BE)
+---
 
-Cedrik – or C-drík, cdrk or Kirdec or any of his many personas – was born in Zaire (now Democratic Republic of the Congo), grew up in Belgium and now lives in Berlin. He is an artist, activist, curator, promoter, DJ, label owner and author, as well as the co-curator of this GEIGER festival. Following over two decades of research on alternative electronic, experimental, and noise music in and from Africa and Asia, he recently published compilations, as well as several essays, dedicated to these topics. With the release of the compilation CD ”Alternate African Reality – electronic, electroacoustic and experimental music from Africa and the diaspora” in 2020, we invited Cedrik to curate this festival together with us, taking this CD as a starting point.
+### Cedrik Fermont (BE)
+Born in Zaire (now the Democratic Republic of the Congo), raised in Belgium, and now based in Berlin, **Cedrik Fermont** (also known as C-drík, cdrk, Kirdec) is an artist, activist, curator, DJ, label owner, and author. He has conducted over two decades of research into alternative electronic, experimental, and noise music from Africa and Asia, publishing numerous compilations and essays and co-curating this festival.
 
-[http://syrphe.com/](http://syrphe.com/)
+http://syrphe.com/  
+https://en.wikipedia.org/wiki/Cedrik_Fermont
 
-[https://en.wikipedia.org/wiki/Cedrik\_Fermont](https://en.wikipedia.org/wiki/Cedrik_Fermont)
+---
 
-Farida Amadou (NE/BE)
+### Farida Amadou (NE/BE)
+**Farida Amadou** is a self-taught bass player based in Liège. Her work spans blues, jazz, hip-hop, and improvised music. After playing bass for Belgian punk band *Cocaine Piss* in 2017, she shifted focus to solo improvisation and collaborations with artists including **Steve Noble, Thurston Moore, Peter Brötzmann**, and **Mette Rasmussen**.
 
-Farida Amadou is a self-taught bass player based in Liège, Belgium. Her music spans over a wide range of genres such as blues, jazz, hip-hop, and improvised music. After a year as bass player in belgian punk band Cocaine Piss in 2017, Farida has been focusing on her solo improvisation practice and collaborations with musicians like Steve Noble, Thurston Moore, Peter Brötzmann, and Mette Rasmussen.
+https://farida-amadou.bandcamp.com/
 
-[https://farida-amadou.bandcamp.com/](https://farida-amadou.bandcamp.com/)
+---
 
-Aurélie Lierman (BE/RW)
+### Aurélie Lierman (BE/RW)
+Born in Rwanda and raised in Belgium, **Aurélie Nyirabikali Lierman** is an independent radio producer, vocalist, and composer. Her work centres on field recordings from contemporary East Africa, transformed into what she calls *Afrique Concrète*. She has released albums with **Nurse With Wound**, collaborated with **Vincent Meessen**, toured the US, and performed leading roles in experimental operatic works.
 
-Aurélie Nyirabikali Lierman was born in Rwanda but grew up in Belgium. She is an independent radio producer, vocalist, and composer fusing radio- and vocal art, and composition. Her main focus is her field recordings: unique sounds and soundscapes from contemporary East‐Africa, which she transforms into what she calls “Afrique Concrète”. Lierman has released two albums with Nurse With Wound, collaborated with artist Vincent Meessen, and toured the US premiering her solo sets for voice and tape. She performed the leading role in What Happened | Plays, a Gertrude Stein-inspired opera by Samuel Vriezen and Adam Frank.
+https://aurelielierman.be
 
-[https://aurelielierman.be](https://aurelielierman.be)
+---
 
-Cobi van Tonder (ZA)
+### Cobi van Tonder (ZA)
+Born in South Africa, **Cobi van Tonder** worked in Johannesburg’s music scene in the late 1990s and early 2000s. Her practice explores *expanded listening*, microtonal drone music, beating patterns, sonic illusions, and acoustics as a compositional parameter — leading to the development of **Acoustic Atlas**, where architectural interiors function as instruments of resonance and echo.
 
-Cobi van Tonder was born in South Africa and worked as a musician in Johannesburg with bands (e.g. Nothing and Otoplasma) in the late 1990s and early 2000s. She explores diverse avenues of listening as art-making space that she describes as ‘expanded listening’. Some of her pieces revolve around microtonal drone music, exploring aspects such as beating patterns and sonic illusions. She also explores acoustics as a prominent musical parameter which has led to her project ACOUSTIC ATLAS. Here, a space (or interior) becomes another ‘instrument’ with unique properties of echo and resonance.
+https://www.otoplasma.com/
 
-[https://www.otoplasma.com/](https://www.otoplasma.com/)
+---
 
-Robert Machiri/Pungwee listening (ZW)
+### Robert Machiri / Pungwe Listening (ZW)
+**Robert Machiri** is a sound worker born in Harare and currently based in Berlin. His practice operates between curatorial work and embodied critique, engaging sound, music, and image-making through processes of learning and unlearning. His project **PUNGWE** investigates sound in Africa within broader contemporary arts discourse.
 
-Robert Machiri is a sound worker born in Harare. Previously based in Johannesburg he currently resides in Berlin. He is a hoarder of things and ideas inspired by a biographical recollection of music; an embodied source for sonic study and memory. His work exists at the interstice of two streams of practice; his curatorial concepts and art which are presented through embodied critique as learning-through-unlearning, interwoven by sound, music and image-making. His most notable project PUNGWE is an interdisciplinary project circling sound in Africa with related contemporary arts discourses and spaces.
-
-[https://listeningatpungwe.wordpress.com/](https://listeningatpungwe.wordpress.com/)
+https://listeningatpungwe.wordpress.com/
