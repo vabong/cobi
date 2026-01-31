@@ -1,7 +1,7 @@
 ---
 title: "Mutation II released on Alternate African Reality"
 publishDate: "2020-12-01"
-cover: "/images/blog/mutation-ii-released-on-alternate-african-reality/cover.jpg"
+cover: "/images/blog/mutation-ii-released-on-alternate-african-reality/1.jpg"
 tags: []
 ---# Mutation II released on Alternate African Reality
 
