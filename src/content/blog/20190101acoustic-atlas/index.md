@@ -2,20 +2,25 @@
 title: "Acoustic Atlas"
 publishDate: "2024-01-01"
 cover: "/images/blog/20190101acoustic-atlas/cover.png"
-tags: []
+tags:
+  - acoustic atlas
+  - architectural acoustics
+  - sound architecture
+  - networked sound
+  - auralisation
+  - heritage
+  - spatial audio
+  - research
+draft: false
 ---
 
-# Acoustic Atlas
+## Acoustic Atlas  
+*1 January 2024*
 
-*Jan 1, 2024*
+**Acoustic Atlas** is a virtual acoustic map for cultivating the capacity to listen to and connect with remote heritage sites. It invites people to sing, speak, and emit sound into virtual acoustic environments, experiencing how their voices — acting as human sonar signals — reveal the hidden interiors, forms, and textures of architectural and natural heritage spaces.
 
+Such listening enables a phenomenological connection with remote sites, which is particularly relevant for the preservation of heritage and for sonic exploration. In the context of acoustical and environmental **intangible heritage**, virtual reconstructions of world heritage sites are becoming increasingly useful for multi-sensory immersive access, research, and conservation.
 
-Acoustic Atlas is a virtual acoustic map, for the cultivation of the capacity to listen to and connect with, remote heritage sites. Acoustic Atlas invites people to sing and emit sound into virtual acoustic environments and experience how their voices, as human sonar signals, reveal the hidden interiors, forms and textures of these heritage sites. Such listening experience allows for a phenomenological connection with the remote site, which becomes particularly relevant for the preservation of heritage sites and for sonic exploration. In the context of acoustical and environmental intangible heritage, virtual reconstructions of world heritage sites are becoming increasingly useful to allow for multi-sensory immersive access, research and conservation. The sonic component of the virtual reconstruction of a site is termed ‘auralisation’ which means rendering a space audible. Examples of uses of auralisations include simulations of ancient and historic sites, to determine the likelihood and nature of rituals and historical actions that may have happened in these sites, or to monitor how sites may have changed over time.
+The sonic component of a virtual reconstruction is known as **auralisation** — the process of rendering space audible. Auralisations can be used to simulate ancient and historic environments, to investigate the likelihood and nature of rituals and historical actions that may have taken place there, and to monitor how sites may have changed acoustically over time.
 
-Acoustic Atlas aims to digitally preserve the acoustics and soundscapes of natural and cultural world heritage sites. The project’s innovative approach will make the acoustical heritage of endangered heritage sites widely accessible. It will bring environmental, educational, conservation and artistic benefits by promoting and enriching heritage research and connecting international researchers and sound artists in the field of heritage acoustics.
-
-The online web-audio platform enables Acoustic Atlas to run on most computers or mobile devices and utilizes the built-in microphone and headphone output of a device to transport a visitor to the selected heritage site via headphones and live microphone feed. Any participant can thus interact with the acoustic simulation (termed auralization) of each site from a first-person point of hearing. The user can click on an image of a location, control various aspects of the sound whilst singing or projecting any sound in real time, into a simulation of the selected site, to hear the reverberations, resonances and echoes thus experience it in a direct sensory way.
-
-Visit here (or click on the image above): https://acousticatlas.de
-
-[#AcousticAtlas](https://chienpien.wixsite.com/fakeland/blog/hashtags/AcousticAtlas) [#Arch](https://chienpien.wixsite.com/fakeland/blog/hashtags/Arch) [#SoundArchitecture](https://chienpien.wixsite.com/fakeland/blog/hashtags/SoundArchitecture) [#NetworkedSound](https://chienpien.wixsite.com/fakeland/blog/hashtags/NetworkedSound)
+Acoustic Atlas aims to digitally preserve the acoustics and soundscapes of natural and cultural world heritage sites. Its approach makes endangered acoustic heritage widely accessible, while supporting environmental, educational, conservation, and artistic research and fost
