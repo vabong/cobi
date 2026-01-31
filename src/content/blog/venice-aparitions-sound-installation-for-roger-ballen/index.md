@@ -1,14 +1,22 @@
 ---
-title: "Cross the Abyss - Apparitions in Venice - Soundtrack for ROGER BALLEN"
+title: "Cross the Abyss – Apparitions in Venice – Soundtrack for Roger Ballen"
 publishDate: "2024-10-20"
 cover: "/images/blog/venice-aparitions-sound-installation-for-roger-ballen/cover.png"
-tags: []
----# Cross the Abyss - Apparitions in Venice - Soundtrack for ROGER BALLEN
+tags:
+  - installation
+  - soundtrack
+  - spatial audio design
+  - multichannel
+  - RogerBallen
+  - Venice
+draft: false
+---
 
-*   Oct 20, 2024
+**Curator:** Roberta Reali  
+**Soundtrack:** Cobi van Tonder  
+**Sound engineering:** Marino Basso  
 
-![](/images/blog/venice-aparitions-sound-installation-for-roger-ballen/image-1.webp)
+**Venue:** Galleria SpazioEventi La Toletta  
+Fondamenta di Borgo, Dorsoduro 1134 – Venezia  
 
-![](/images/blog/venice-aparitions-sound-installation-for-roger-ballen/image-3.webp)
-
-![](/images/blog/venice-aparitions-sound-installation-for-roger-ballen/image-5.webp)
+**Dates:** 20/09 – 20/11/2024
