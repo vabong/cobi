@@ -8,6 +8,9 @@ tags:
   - telepathy
   - plants
   - healing
+  - cyma
+  - differencetones
+  - microtonal
   - performance
   - meditation
   - nature
