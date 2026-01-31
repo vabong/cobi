@@ -1,19 +1,28 @@
 ---
-title: "TETRARCHs, Artist Residency in Al Ain, UAE "
+title: "TETRARCHs – Artist Residency in Al Ain, UAE"
 publishDate: "2024-06-23"
 cover: "/images/blog/tetrarchs-artist-residency-in-al-ain-uae/cover.png"
-tags: []
----# TETRARCHs, Artist Residency in Al Ain, UAE
+tags:
+  - archaeology
+  - artist residency
+  - sound
+  - field recording
+  - bronze age
+  - UAE
+  - research
+draft: false
+---
 
-*   Jun 23, 2024
+## TETRARCHs – Artist Residency in Al Ain, UAE  
+*23 June 2024*
 
 ![ree](/images/blog/tetrarchs-artist-residency-in-al-ain-uae/image-1.jpg)
 
-**Transforming Data Reuse in Archaeology**
+### Transforming Data Reuse in Archaeology  
+[https://www.tetrarchs.org/](https://www.tetrarchs.org/)
 
-[https://www.tetrarchs.org/](https://www.tetrarchs.org/) 
-
-Delighted to be an artist working with phenomenal archaeologists in imagining 'What did the Bronze Age in the UAE sound like?"
+Delighted to be an artist working with phenomenal archaeologists in imagining  
+**“What did the Bronze Age in the UAE sound like?”**
 
 ![](/images/blog/tetrarchs-artist-residency-in-al-ain-uae/image-2.webp)
 
