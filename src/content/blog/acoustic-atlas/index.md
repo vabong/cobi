@@ -1,7 +1,7 @@
 ---
 title: "Acoustic Atlas"
 publishDate: "2021-10-14"
-cover: "/images/blog/acoustic-atlas/cover.jpg"
+cover: "/images/blog/acoustic-atlas/cover.png"
 tags:
   - acoustic atlas
   - spatial audio
