@@ -9,9 +9,6 @@ tags: []
 
 *Jan 1, 2024*
 
-[![](/images/blog/20190101acoustic-atlas/image-1.png)
-
-](https://acousticatlas.de)
 
 Acoustic Atlas is a virtual acoustic map, for the cultivation of the capacity to listen to and connect with, remote heritage sites. Acoustic Atlas invites people to sing and emit sound into virtual acoustic environments and experience how their voices, as human sonar signals, reveal the hidden interiors, forms and textures of these heritage sites. Such listening experience allows for a phenomenological connection with the remote site, which becomes particularly relevant for the preservation of heritage sites and for sonic exploration. In the context of acoustical and environmental intangible heritage, virtual reconstructions of world heritage sites are becoming increasingly useful to allow for multi-sensory immersive access, research and conservation. The sonic component of the virtual reconstruction of a site is termed ‘auralisation’ which means rendering a space audible. Examples of uses of auralisations include simulations of ancient and historic sites, to determine the likelihood and nature of rituals and historical actions that may have happened in these sites, or to monitor how sites may have changed over time.
 
