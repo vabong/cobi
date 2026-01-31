@@ -1,34 +1,41 @@
 ---
-title: "Skatesonic - ISEA/IDEO/Villa Montalvo"
+title: "Skatesonic – ISEA / IDEO / Villa Montalvo"
 publishDate: "2020-04-07"
 cover: "/images/blog/skatesonic-isea-ideo-villa-montalvo/cover.png"
-tags: []
----# Skatesonic - ISEA/IDEO/Villa Montalvo
+tags:
+  - innovation
+  - interactive
+  - skatesonic
+  - ISEA
+  - body
+  - interactive art
+  - music controllers
+  - electronic music
+  - human computer interaction
+draft: false
+---
 
-*   Apr 7, 2020
+## Skatesonic – ISEA / IDEO / Villa Montalvo  
+*7 April 2020*
 
-![ree](/images/blog/skatesonic-isea-ideo-villa-montalvo/image-1.jpeg)
 
-![ree](/images/blog/skatesonic-isea-ideo-villa-montalvo/image-2.jpeg)
+---
 
-_Skatesonic_ is a human/computer-skate/music interactive system. Movement data from a skateboard - speed, tilt, distance off the ground, sound from a microphone built into the board registers different tricks and sends them to a computer via blue-tooth, which plays back skateboard-generated music.
+**Skatesonic** is a human / computer / skate / music interactive system. Movement data from a skateboard — including speed, tilt, distance off the ground, and sound from a microphone built into the board — registers different tricks and sends this data to a computer via Bluetooth, which then plays back skateboard-generated music.
 
-The music varies depending on the surface that the skateboard is rolling over and the different ways people ride. The skateboards can be hooked up in unison, so a group of skateboarders can each play their own "instrument." Skatesonic was created during a ZERO ONE/IDEO artist-in-residence program in San Jose, California, in collaboration with IDEO, Palo Alto. It was also performed at P.Arty in Seoul, Korea, in 2007.
+The music varies depending on the surface the skateboard rolls over and the different ways people ride. Multiple skateboards can be connected in unison, allowing a group of skateboarders to each play their own “instrument.” *Skatesonic* was created during a **ZERO ONE / IDEO artist-in-residence** program in San Jose, California, in collaboration with **IDEO, Palo Alto**. It was also performed at **P.Arty in Seoul, Korea**, in 2007.
 
-Neal Stevenson's 1992 novel _Snow Crash_ was a big inspiration for _Skatesonic_. Especially the character Y.T., the young skateboard courier who whizzes around on her skateboard with smart wheels, made me consider the translation of skateboard riding into code and from code into music.
+Neal Stephenson’s 1992 novel *Snow Crash* was a major inspiration for *Skatesonic*. In particular, the character **Y.T.**, the young skateboard courier who speeds through the city on smart wheels, led me to consider the translation of skateboard riding into code — and from code into music.
 
-_Snow Crash_ was, in turn, influenced by Julian Jaynes' book The Origin of Consciousness in the Breakdown of the Bicameral Mind. It assumes "a state in which cognitive functions were once divided between one part of the brain which appears to be "speaking", and a second part which listens and obeys—a bicameral mind" (Wikipedia). The relation between language and consciousness is deeply explored.
+*Snow Crash* was itself influenced by **Julian Jaynes’** book *The Origin of Consciousness in the Breakdown of the Bicameral Mind*. Jaynes proposed “a state in which cognitive functions were once divided between one part of the brain which appears to be ‘speaking’, and a second part which listens and obeys — a bicameral mind” (Wikipedia). The relationship between language and consciousness is explored deeply in this theory.
 
-Where does music fit (as abstract language) in this speculative spectrum of consciousness?
+Where does music — as an abstract form of language — fit within this speculative spectrum of consciousness?
 
-"Jaynes theorized that a shift from bicameralism marked the beginning of introspection and consciousness as we know it today. Leftovers of the bicameral mind today, according to Jaynes, include religion, hypnosis, possession, schizophrenia \[...\], and auditory hallucinations: Several more recent studies provide additional evidence to right hemisphere involvement in auditory hallucinations. Recent neuroimaging studies provide new evidence for Jaynes's neurological model (e.g., auditory hallucinations arising in the right temporal-parietal lobe and being transmitted to the left temporal-parietal lobe)" (Wikipedia).
+Jaynes theorised that a shift away from bicameralism marked the beginning of introspection and consciousness as we understand it today. Residual traces of the bicameral mind, according to Jaynes, include religion, hypnosis, possession, schizophrenia, and auditory hallucinations. More recent neuroimaging studies suggest right-hemisphere involvement in auditory hallucinations, lending further support to aspects of Jaynes’ neurological model (Wikipedia).
 
-The plot of _Snow Crash_ involves an attempt to return humans to their bicameral, pre-conscious state. It happens in the context of a virtual reality space called the Metaverse, which appears as an urban environment. I imagined how the music/soundtrack of Skatesonic becomes an abstract parallel reality, how a skater's movements and contact with the surfaces of the urban environment can be interpreted as pure sound.
+The plot of *Snow Crash* involves an attempt to return humans to their bicameral, pre-conscious state, unfolding within a virtual reality environment called the **Metaverse**, imagined as an urban landscape. I began to imagine how the music and soundtrack of *Skatesonic* might function as an abstract parallel reality — how a skater’s movements and contact with urban surfaces could be translated directly into sound.
 
-Makezine Featured it:
-
+*Skatesonic* was featured by **Makezine**:  
 http://makezine.com/2008/12/06/skate-sonic-skateboarding/
 
-Also, as a human-computer interface, could we someday be whizzing through virtual landscapes, controlling our computer programs with skateboards rather than fingers on a keyboard or hand on a mouse? Or could skaters improve their skills with the aid of sonic responses?
-
-[#Innovation](https://chienpien.wixsite.com/fakeland/blog/hashtags/Innovation) [#Interactive](https://chienpien.wixsite.com/fakeland/blog/hashtags/Interactive) [#Skatesonic](https://chienpien.wixsite.com/fakeland/blog/hashtags/Skatesonic) [#ISEA](https://chienpien.wixsite.com/fakeland/blog/hashtags/ISEA) [#Body](https://chienpien.wixsite.com/fakeland/blog/hashtags/Body)
+As a human–computer interface, *Skatesonic* raises speculative questions: could we someday navigate virtual landscapes by controlling software with skateboards rather than fingers on a keyboard or hand on a mouse? Could skaters improve their skills through sonic feedback — learning through sound as much as through vision or touch?
