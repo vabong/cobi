@@ -1,7 +1,7 @@
 ---
 title: "River of Souls – ANIMALISM – Sound Installation for Roger Ballen"
 publishDate: "2025-05-27"
-cover: "/images/blog/animalism-sound-installation-for-roger-ballen/cover.png"
+cover: "/images/blog/animalism-sound-installation-for-roger-ballen/cover.jpeg"
 tags:
   - sound installation
   - RogerBallen
