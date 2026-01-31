@@ -28,6 +28,14 @@ draft: false
 
 ---
 
+### Further reading
+
+These pieces are described in depth in my PhD thesis:
+
+**PhD Thesis — Commentary on the Portfolio of Compositions**  
+https://www.researchgate.net/publication/337907446_Commentary_on_the_Portfolio_of_Compositions
+
+---
+
 Listen and purchase here:  
 https://telepathicbeing.bandcamp.com/album/transfigured-resonance
-
