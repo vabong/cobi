@@ -29,13 +29,6 @@ Fondamenta di Borgo, Dorsoduro 1134 – Venezia
 >
 > *The immersive quality of this show is enhanced by **Cross the Abyss**, the original soundtrack of the South African composer Cobi van Tonder, whose site-specific composition makes the exhibition interiors pulse with dense and subtle vibrations, diffusing the synthesized physicality of electronic sound into the ambient. Music in dialogue with the visual Apparitions, suspended in darkness, reflects murmurs, voices, lights, shadows, cries and whispers, laughter and sudden movements.*
 >
-> *The sixteen Venetian Apparitions are chosen from photographs taken between 2005 and 2013. In collaboration with his artistic director, Marguerite Rossouw, Ballen recreated on the windows of a building in Johannesburg a phantasmagorical iconographic series obtained by fixing fluid, iridescent, and subtly grainy concretions on a black glass background using mixed techniques: spray paint, epoxy resins, emulsions, and brushes.*
->
-> *From these material deposits, the artist extracts archetypal, ectoplasmic, and otherworldly forms directly from the dark chamber of his subconscious.*
->
-> *“During the period we worked on these images, we worked feeling our way into new territories. Through trial and error, using various techniques, we were eventually able to establish methods that culminated in imagery of a new dimension. These have been likened to prehistoric cave paintings on which thoughts and emotions were portrayed. The images were rarely planned and were instead the result of a spontaneous process in which the choice of material sometimes created magical and inconceivable outcomes. They share a complete absence of conscious awareness. They are all born out of the unbearable, the unacceptable, and even the unthinkable.”*  
-> — **Roger Ballen**
->
 > *This is the ‘Ballenesque’: a surreal theatre composed of figures of archaic and unconscious psychic interaction, personifying clusters of thoughts, life and death, impulses, and unfathomable emotions. These projections of the primitive mind display a humorous kermesse of Freudian archetypes in a ‘cruel’ dialogue oscillating between the poetics of Artaud and Lacan.*
 >
 > *The Theatre of Apparitions aims to break down barriers of separateness and create a profound relationship with the viewer, investigating common origins in the nocturnal abysses of the universe — a cosmos manifesting as an appearance created by the mind, much like photographic light drawing an image from corpuscular matter in the darkroom.*
